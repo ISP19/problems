@@ -1,0 +1,22 @@
+# Python compiler output
+__pycache__
+*.py[cod]
+# code coverage, logs
+.coverage
+.coveragerc
+htmlcov/
+*.log
+# Intellij files
+.idea/
+*.iml
+# Eclipse, Pydev, and VSCode files
+.settings
+.pydevproject
+.project
+.vscode/
+# Virtual env files (common directory names)
+env/
+venv/
+virtualenv/
+# Misc
+.DS_Store
