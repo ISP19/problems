@@ -17,9 +17,9 @@ Given a list of Tips from PAD in the table below:
 Which Tip is suitable the most for each Scrum concept below? Answer only one Tip for each Scrum concept.
 
 1. _____ : Product owner makes sure that right user stories are in the product backlog.
-2. _____ : Split user stories in release backlog to sprints.
+2. _____ : Team members answer three questions in Daily Scrum.
 3. _____ : Use a burndown chart to monitor the progress of sprint.
 4. _____ : Daily Scrum.
-5. _____ : Team members answer three questions in Daily Scrum.
+5. _____ : Split user stories in release backlog to sprints.
 
 ###Answer
