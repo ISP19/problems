@@ -23,3 +23,13 @@ Which Tip is suitable the most for each Scrum concept below? Answer only one Tip
 5. _____ : Split user stories in release backlog to sprints.
 
 ###Answer
+
+1. Tip 10 : Product owner makes sure that right user stories are in the product backlog.
+2. Tip 45 : Team members answer three questions in Daily Scrum.
+3. Tip 23 : Use a burndown chart to monitor the progress of sprint.
+4. Tip 38 : Daily Scrum.
+5. Tip 17 : Split user stories in release backlog to sprints.
+
+Notes
+- Tip 18 *Estimate based on real work* is about estimating accomplished works of the project to inform the customer.
+- Tip 28 *Write code in short edit/build/test cycles* is about a good coding practice.
