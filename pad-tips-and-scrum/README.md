@@ -1,6 +1,6 @@
-##PAD Tips and Scrum
+## PAD Tips and Scrum
 
-###Question
+### Question
 
 Given a list of Tips from PAD in the table below:
 
@@ -22,7 +22,7 @@ Which Tip is suitable the most for each Scrum concept below? Answer only one Tip
 4. _____ : Daily Scrum.
 5. _____ : Split user stories in release backlog to sprints.
 
-###Answer
+### Answer
 
 1. Tip 10 : Product owner makes sure that right user stories are in the product backlog.
 2. Tip 45 : Team members answer three questions in Daily Scrum.
