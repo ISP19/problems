@@ -1,6 +1,6 @@
 ## GIT Command
 ### Questions
-Draw a graph and specify the lastest position of HEAD and all branches from the following git command.
+Draw a graph and specify the latest position of HEAD and all branches from the following git command.
 ```sh
 git commit
 git branch xxyyzo
