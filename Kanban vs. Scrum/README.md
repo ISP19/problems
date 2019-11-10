@@ -17,7 +17,7 @@ For more understand on Kanban: watch the [video](https://www.youtube.com/watch?v
 
 Question
 ---
-What are the difference between Kanban and Scrum?
+What are the differences between Kanban and Scrum?
 
 Answer
 ---
