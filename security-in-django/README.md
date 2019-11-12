@@ -2,7 +2,7 @@
 
 > A Django application without security concern is like a zoned house with unlocked doors.
 
-An interesting topic which has not been elaborately covered in the class is about security concerns in Django. 
+An interesting topic which has not been elaborately covered in the class is all about security in Django. 
 
 One good site which provides popular security vulnerabilities is [OWASP](https://www.owasp.org/index.php/Main_Page), short for Open Web Application Security Project. **OWASP** is an online website from a non-profit organisation which generally provides freely available documentation—most popular ones are its yearly top 10's—in the field of **web application security**.
 
