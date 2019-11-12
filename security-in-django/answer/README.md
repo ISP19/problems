@@ -18,7 +18,7 @@ From the second template of which HTML code is
 </form>
 ```
 
-Fortunately, Django would not let this happen in the first place as it already covers the protection against the possible attack; nevertheless, it is noticeable that he forgot to include the tag `{% csrf_token %}`. This would possibly result in Django **CSRF token missing** error beforehand.
+Fortunately, Django **would not let this happen** in the first place as it already covers the protection against the possible attack; nevertheless, it is noticeable that he forgot to include the tag `{% csrf_token %}`. This would possibly result in Django **CSRF token missing** error beforehand.
 
 #### Solution
 
