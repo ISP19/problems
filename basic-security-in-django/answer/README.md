@@ -1,4 +1,4 @@
-## Answer to a Security in Django question
+## Answer to a basic Security in Django question
 > Note: There might be more problems in the category.
 
 In the given problem, it seems there are two possible vulnerabilities: CSRF and XSS.
