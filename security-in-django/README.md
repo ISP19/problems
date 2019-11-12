@@ -8,9 +8,9 @@ One good site which provides popular security vulnerabilities is [OWASP](https:/
 
 ## Question
 
-``Given a scenario based on the real implementation when a developer wanted to bring in client-side reactive components into his web application using [Vue.js](https://vuejs.org/) for creating a Facebook clone. He decided to directly inject data into an HTML template of the application, seeing that it would result in less round trip time during rendering a web page instead of another Ajax request to fetch the data.
+Given a scenario based on the real implementation when a developer wanted to bring in client-side reactive components into his web application using [Vue.js](https://vuejs.org/) for creating a Facebook clone. He decided to directly inject data into an HTML template of the application, seeing that it would result in less round trip time during rendering a web page instead of another Ajax request to fetch the data.
 
-Then he wrote an HTML template which partially contains the `script` tag as follows.``
+Then he wrote an HTML template which partially contains the `script` tag as follows.
 
 _The first Django (Jinja2) template:_
 
