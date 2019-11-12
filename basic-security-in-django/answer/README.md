@@ -54,5 +54,5 @@ Even worse, an attacker can execute a client-side script to steal sensitive user
 
 #### Mitigation
 
-- Be extra careful when using `safe` filter, `is_safe`, and `mark_safe` function, **do validate** and sanitise user inputs before saving to a database. 
+- Be extra careful when using `safe` filter, `is_safe`, and `mark_safe` function; **do validate** and sanitise user inputs before saving to a database. 
 - Instead, split the notorious in-line `script` tag into a separate JS file, refer to it using `src` attribute, and consume the data from Ajax requests.
