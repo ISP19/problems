@@ -1,4 +1,4 @@
-# Basic security in Django
+# Basic Security in Django
 
 > A Django application without security concern is like a zoned house with unlocked doors.
 
