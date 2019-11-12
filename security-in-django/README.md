@@ -12,7 +12,7 @@ Given a scenario based on the real implementation when a developer wanted to bri
 
 Then he wrote an HTML template which partially included the `script` tag as follows.
 
-_The first Django (Jinja2) template:_
+_The portion of the first Django (Jinja2) template:_
 
 ```jinja
 <script type="application/javascript">
@@ -35,7 +35,7 @@ _The first Django (Jinja2) template:_
 
 In addition, he provided another template to enable users of his application to submit their posts in a separate page using a Django form with [`widget-tweaks`](https://pypi.org/project/django-widget-tweaks/) template extension. He preliminarily wrote the template as follows.
 
-_The second template:_
+_The portion of the second template:_
 
 ```jinja
 <form method="post" class="box" @submit.prevent="createPost()">
