@@ -50,7 +50,7 @@ _The second template:_
 
 This seems a solution to integrate a Django app with a client-side JavaScript framework, yet it poses security vulnerabilities.
 
-To what vulnerabilities can the application be possibly prone according to the given OWASP's top 10 list and how can you mitigate those issues? (*You can either provide a improved template or a brief explanation of your solution.*)
+To what vulnerabilities can the application be possibly prone according to the given OWASP's top 10 list and how can you mitigate or prevent those issues? (*You can either provide a improved template or a brief explanation of your solution.*)
 
 **Hint**: Preliminarily, there are two of them.
 
