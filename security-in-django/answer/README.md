@@ -48,7 +48,7 @@ According to the first template of which HTML code is
 </script>
 ```
 
-He was using the `safe` filter which bypassing Django built-in HTML escape functionality, opening up possibilities for malicious user inputs; for instance, a user enters another `script` tag in the form input, and the application will then display some odd behaviour.
+He was using the `safe` filter which was bypassing Django built-in HTML escape functionality, opening up possibilities for malicious user inputs; for instance, a user enters another `script` tag in the form input, and the application will then display some odd behaviour.
 
 Even worse, an attacker can execute a client-side script to steal sensitive user data (such as **cookies**) across sites or even attempt to **hijack** the user's session.
 
