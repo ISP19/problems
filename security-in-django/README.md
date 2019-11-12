@@ -8,9 +8,9 @@ One good site which provides popular security vulnerabilities is [OWASP](https:/
 
 ## Question
 
-Given a scenario based on the real implementation when a developer wanted to bring in client-side reactive components into his web application using [Vue.js](https://vuejs.org/) for creating a Facebook clone. He decided to directly inject data into an HTML template of the application, seeing that it would result in less round trip time during rendering a web page instead of another Ajax request to fetch the data.
+``Given a scenario based on the real implementation when a developer wanted to bring in client-side reactive components into his web application using [Vue.js](https://vuejs.org/) for creating a Facebook clone. He decided to directly inject data into an HTML template of the application, seeing that it would result in less round trip time during rendering a web page instead of another Ajax request to fetch the data.
 
-Then he wrote an HTML template which partially contains the `script` tag as follows.
+Then he wrote an HTML template which partially contains the `script` tag as follows.``
 
 _The first Django (Jinja2) template:_
 
@@ -33,7 +33,7 @@ _The first Django (Jinja2) template:_
 </script>
 ```
 
-In addition, he provided another template to enable users of his application to submit their posts in a separate page using a Django form with [`widget-tweaks`](https://pypi.org/project/django-widget-tweaks/) template extension. He wrote the template as follows.
+In addition, he provided another template to enable users of his application to submit their posts in a separate page using a Django form with [`widget-tweaks`](https://pypi.org/project/django-widget-tweaks/) template extension. He preliminarily wrote the template as follows.
 
 _The second template:_
 
@@ -58,7 +58,7 @@ To what vulnerabilities can the application be possibly prone according to the g
 Think about this question for a moment before getting into an answer.
 
 ### **Spoiler alert**
-> [Click here](answer/README.md) to get an answer
+> [Click here](answer/README.md) to get an answer.
 
 ## Useful references:
 
