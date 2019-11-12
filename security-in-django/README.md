@@ -63,8 +63,8 @@ Think about this question for a moment before getting into an answer.
 ## Useful references:
 
 - Django official site
+  - Security in Django - [Read me](https://docs.djangoproject.com/en/2.2/topics/security/)
   - Built-in template tags and filters - [Read me](https://docs.djangoproject.com/en/2.2/ref/templates/builtins/)
   - Working with forms - [Read me](https://docs.djangoproject.com/en/2.2/topics/forms/)
-  - Security in Django - [Read me](https://docs.djangoproject.com/en/2.2/topics/security/)
   
 - (OWASP) Top 10 list of security vulnerabilities in 2017 - [Read me](https://www.owasp.org/index.php/Top_10-2017_Top_10)
