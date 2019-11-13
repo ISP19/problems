@@ -18,7 +18,7 @@ From the second template of which HTML code is
 </form>
 ```
 
-Fortunately, Django **would not let this happen** in the first place as it already covers the protection against the possible attack; nevertheless, it is noticeable that he forgot to include the tag `{% csrf_token %}`. This would possibly result in Django **CSRF token missing** error beforehand.
+Fortunately, Django **would not let this happen** in the first place as it already covers protection against this attack; nevertheless, it is noticeable that he forgot to include the tag `{% csrf_token %}`. This would possibly result in Django **CSRF token missing** error beforehand.
 
 #### Solution
 
@@ -48,7 +48,7 @@ According to the first template of which HTML code is
 </script>
 ```
 
-He was using the `safe` filter which was bypassing Django built-in HTML escape functionality, opening up possibilities for malicious user inputs; for instance, a user enters another `script` tag in his post during post creation, and the application will then display some odd behaviour.
+He was using the `safe` filter which bypasses Django built-in HTML escape functionality, opening up possibilities for malicious user inputs; for instance, a user enters another `script` tag in his post during post creation, and the application will then display some odd behaviour.
 
 Even worse, an attacker can execute a client-side script to steal sensitive user data (such as **cookies**) across sites or even attempt to **hijack** the user's session.
 
