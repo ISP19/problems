@@ -1,13 +1,12 @@
-# DRY- principle
+# DRY principle
 
-```
-Don't repeat yourself (DRY, or sometimes do not repeat yourself) is a principle of software development aimed at reducing repetition of software patterns, replacing it with abstractions or using data normalization to avoid redundancy.
+> Don't repeat yourself (DRY) is a principle of software development aimed at reducing repetition of software patterns, replacing them with
+> abstractions or data normalization to avoid redundancy.
 
-```
 
-from [Wiki](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+from [Wikipedia](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-see the files in `./template` in Django. you might see your files containing same thing in `header` and `footer`
+See the files in `./template` in Django. You might see your files containing the same thing in `header` and `footer`
 
 ```html
 {% load static %}
@@ -34,15 +33,15 @@ see the files in `./template` in Django. you might see your files containing sam
 </html>
 ```
 
-as you can see, we might have a lot of importing from Bootstrap, Jquery, Popper.js, CSS and this applied to ALL pages.
+As you can see, we might have a lot of imports from Bootstrap, Jquery, Popper.js, CSS and this applied in all pages.
 
 # Question
 
-1. how can you apply DRY principle to Django templates so that we don't have to repeat typing import for every pages?
+1. How can you apply the DRY principle to Django templates so that we don't have to repeat typing imports for every pages?
 
 # Answer
 
-- use `Django template extending` by creating base.html for content to be built on.
+- Use ***Django template extension by*** creating base.html for content to be built on.
 
 
 `base.html`
@@ -89,7 +88,7 @@ as you can see, we might have a lot of importing from Bootstrap, Jquery, Popper.
 {% extends 'AwesomeApp/base.html' %}
 
 {% block content %}
-<h1>index World!</h1>
+<h6>index World!</h6>
 {% endblock %}
 ```
 
@@ -99,6 +98,6 @@ as you can see, we might have a lot of importing from Bootstrap, Jquery, Popper.
 {% extends 'AwesomeApp/base.html' %}
 
 {% block content %}
-<h1>register World!</h1>
+<p>register World!</p>
 {% endblock %}
 ```
