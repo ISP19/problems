@@ -7,4 +7,5 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | Topic                                            | Author |
 |:-------------------------------------------------|--------|
 | [PAD Tips and Scrum Practices](pad-tips-and-scrum/README) | Nutthanich |
-| [Draw Git Commit Graph](git-command/README) | Tetach |
+| [Draw Git Commit Graph](git-command/README)     | Tetach |
+| [Security in Django](security-in-django/README) | Tharatorn |
