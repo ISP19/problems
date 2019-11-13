@@ -1,0 +1,207 @@
+# Type Hinting –– an introduction
+
+Content:
+
+- [Motivations for using type hints](#motivations-for-using-type-hints)
+- [Ways to type hint](#ways-to-type-hint)
+  - [Function Annotations (PEP 3107)](#function-annotations-pep-3107)
+  - [The typing module (PEP 484)](#the-typing-module-pep-484)
+  - [Variable Annotations (PEP 526)](#variable-annotations-pep-526)
+  - [Summary](#summary)
+- [Question / Problem / Task](#question--problem--task)
+
+## Motivations for using type hints
+
+- Improved **readability** for humans and machine
+  * Allow/Improve code completion for IDEs
+- Acts as live **documentation**
+  * Solves the problem of docstrings not being maintained
+  * Docstrings don't allow complex types
+- Reduce errors
+  * Helps a lot in large projects
+
+While Python is known for _duck typing_ and _dynamic type checking_ (and some people
+will argue against any form of type checking), many agree that _static type checking_
+is still welcomed. 
+
+## Ways to type hint
+
+### Function Annotations (PEP 3107)
+
+Function annotations were introduced in [**PEP 3107**](https://www.python.org/dev/peps/pep-3107/)
+and is available from Python 3.0.
+The PEP allows for this syntax
+
+```python
+def foo(a: expression, b: expression = default_value):
+    ...
+def bar(*args: expression, **kwargs: expression):
+    ...
+def bazz() -> expression:
+    ...
+```
+
+This results in a `dict` mapping from parameter names to the Python _expression_; 
+the return value is denoted by the key `'return'`. The expression is evaluated
+during function definition.
+
+This `dict` can be accessed via a _dunder_ attribute `.__annotations__` which 
+doesn't have any effect on the program on its own.
+
+[**PEP 3107**](https://www.python.org/dev/peps/pep-3107/) 
+allows for any valid python expression to be there including any `str`, 
+`int`, or whatever, but in current practice, we put classes in there.
+
+```python
+def catch_all(*args, **kwargs) -> None:
+    return
+
+def double_string(string: str, sep: str = '') -> str:
+    return f'{string}{sep}{string}'
+
+def my_abs(x: int) -> int:
+    if x < 0:
+        x = -x
+    return x
+```
+
+```
+>>> catch_all.__annotations__
+{'return': None}
+>>> double_string.__annotations__
+{'string': <class 'str'>, 'return': <class 'str'>}
+>>> my_abs.__annotations__
+{'x': <class 'int'>, 'return': <class 'int'>}
+```
+
+With these, IDEs and static type checkers like `mypy` can help you check for 
+any type issues, before actual runtime.
+
+### The typing module (PEP 484)
+
+[**PEP 484**](https://www.python.org/dev/peps/pep-0484/) introduces the 
+[`typing`](https://docs.python.org/3/library/typing.html) module,
+which allows for more complex types.
+
+Let's se it in action.
+
+```python
+from typing import Any, Union
+
+Number = Union[int, float, complex]
+
+def catch_all(*args: Any, **kwargs: Any) -> None: ...
+
+def double_string(string: str, sep: str = '') -> str: ...
+
+def my_abs(x: Number) -> Number: ...
+```
+
+With `Union`, you can now call `my_abs()` with any numbers and the IDE or `mypy`
+won't yell at you.
+
+Some more examples:
+
+```python
+from typing import Optional
+
+def swap_keys_and_values(dict_: dict) -> Optional[dict]: ...
+```
+
+You and the IDE both know that `swap_keys_and_values()` can return both a `dict`
+or a `None` (probably if the keys and values can't be swapped).
+
+```python
+from typing import Dict, Any
+
+def parse_request_data(data: Dict[str, Any]) -> None: ...
+```
+
+This function only accepts data in the form of a `dict` with a `str` as the key.
+
+```python
+class Question:
+    ...
+    def get_voted_choice(self) -> models.QuerySet:
+        """
+        Returns an iterable that iterates over all choices of this
+        question that has been voted.
+        """
+```
+
+Any kind of `class` can be used.
+
+Some other useful ones I've used:
+- All the standard type extensions: `List`, `Tuple`, `Set`, etc.
+- `Iterable` when I only require a function / method's input to be an iterable
+  (that is, I can use a for loop with it at least once)
+- `Callable` when you're making higher level functions or using a function somewhere
+- ...
+
+See the [`typing`](https://docs.python.org/3/library/typing.html) module for more details.
+
+### Variable Annotations (PEP 526)
+
+[**PEP 526**](https://www.python.org/dev/peps/pep-0526/) introduces a new syntax
+for defining variables available from Python 3.6 onwards.
+
+```bnf
+annotated_assignment_stmt ::=  augtarget ":" expression ["=" expression]
+```
+
+Don't worry if you don't understand what this means. This is in an Extended 
+[Backus-Naur Form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form), a 
+modified version of BNF used by [Python](https://docs.python.org/3.7/reference/introduction.html#notation).
+
+What that means is basically that you can now do this
+
+```python
+x: int = 5
+```
+
+It might not look very useful cause many of the time that's pretty obvious and
+static type checkers and IDE can figure these things out pretty easily. But in
+some cases: 
+
+```python
+choice_text: str = Cls.call(some_object).complicated.chained.access().andfunc().calls['choice_text']
+```
+
+The IDE already lost track of what the types are after the first few calls. (And
+probably also whoever is reading your code.) By adding type hints to the variable
+IDE regains knowledge of what type the variable is, so it can now do code
+completion for you again, and whoever your code can now be a little bit happier.
+
+### Summary
+
+In summary, you can annotate both the parameters and the return value of 
+functions, classes, and variables, with the help of the `typing` module for more
+complex types.
+
+All of these are Python 3 specific. Some options I haven't shown you that is 
+possible for Python 2 (or C in case of the standard library) is using type 
+comments and stub files.
+
+I'll just put a link down here to my (unfinished) slides (missing some examples)
+for the `typing` module) in case you want to know about them.
+https://docs.google.com/presentation/d/1zoazXU6r4XZhYgjxGkpdDLirccB9TZg9mN40bW-0D6M/edit
+
+For other sources I suggest reading `typing` module in the docs and the PEPs it 
+links to.
+
+## Question / Problem / Task
+
+Add type hints where it's appropriate to these modules:
+
+- XXX
+- YYY
+- ZZZ
+
+## References
+
+- https://docs.python.org/3/library/typing.html
+- https://www.python.org/dev/peps/pep-0484/
+- https://www.python.org/dev/peps/pep-0526/
+- https://www.python.org/dev/peps/pep-3107/
+- [Type Hints - Guido van Rossum - PyCon 2015](https://www.youtube.com/watch?v=2wDvzy6Hgxg)  
+  If I didn't convince you to use type hints, maybe he will. Recommended video.
