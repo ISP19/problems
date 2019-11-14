@@ -104,13 +104,13 @@ won't yell at you.
 Some more examples:
 
 ```python
-from typing import Optional
+from typing import Optional, List
 
-def swap_keys_and_values(dict_: dict) -> Optional[dict]: ...
+def get_even(list_: List[int]) -> Optional[List[int]]: ...
 ```
 
-You and the IDE both know that `swap_keys_and_values()` can return both a `dict`
-or a `None` (probably if the keys and values can't be swapped).
+You and the IDE both know that `get_even()` can return both a `list`a
+of `int` or a `None` (probably if there aren't any even numbers).
 
 ```python
 from typing import Dict, Any
@@ -223,14 +223,14 @@ _____object\____   0. `(3,)` or `(4,)`  ❌ # passes type check, but too broad, 
 _____tuple\_____   0. `(3,)` or `(4,)`  ⭕ # passes type check, but could be better, partial credits  
 ___Tuple\[int]\___ 0. `(3,)` or `(4,)`  ⭕ # passes type check, full points  
 
-________________   1. `'\u005e\u005e'` or `'just a string'`  
-________________   2. `[<__main__.A object at 0x000001A6C4F18610>, <__main__.A object at 0x000001A6C4F18C40>]`  
-________________   3. `[1, 2, 3, 4, 5]` or `[2.75, 5.5, 8.25]` but not `[1, 2.]`  
-________________   4. `{'one': 1, 'two': 2, 'three': 3}` but not `{'one': '1', 'two': '2'}`  
-________________   5. `<QuerySet []>` or `range()`  
-________________   6. `[(0, 5), (5, 0), (5, 5)]`    
-________________   7. `lambda x: None`  
-________________   8. `lambda: 'some string'`
+__________________   1. `'\u005e\u005e'` or `'just a string'`  
+__________________   2. `[<__main__.A object at 0x000001A6C4F18610>, <__main__.A object at 0x000001A6C4F18C40>]`  
+__________________   3. `[1, 2, 3, 4, 5]` or `[2.75, 5.5, 8.25]` or `[1, 2.]`  
+__________________   4. `{'one': 1, 'two': 2, 'three': 3}` but not `{'one': '1', 'two': '2'}`  
+__________________   5. `<QuerySet []>` or `range()`  
+__________________   6. `[(0, 5), (5, 0), (5, 5)]`    
+__________________   7. `lambda x: None`  
+__________________   8. `lambda: 'some string'`
 
 ### 2. For each type annotation, give an example of objects that would pass `mypy` type check
 
@@ -280,30 +280,127 @@ Try to be forgiving for parameter types and specific for return type.
 
 **Example:**
 ```python
-from typing import *
+from typing import Callable, Iterable, Iterator
+
+# No.0
 def my_map(a: Callable, b: Iterable) -> Iterator:
     return map(a, b)
 ```
 
-### 4. Fill in the blanks in the code so that the `mypy` type checks passes
+```python
+from typing import *
+
+# No.1
+def swap_keys_and_values(dict_):
+    """Returns a dict with swapped keys and values."""
+    if not isinstance(dict_, dict):
+        raise TypeError("'self' must be a dict")
+    if len(set(dict_.values())) != len(dict_):
+        raise ValueError("values aren't unique, can't swap keys and values")
+    return {v: k for k, v in dict_.items()}
+
+# No.2
+def remove_duplicate(iterable):
+    """Returns a list with no duplicates."""
+    if not isinstance(iterable, Iterable)
+    return list(set(iterable))
+
+# No.3
+def normalized(s):
+    """Returns a NFKC normalized str."""
+    import unicodedata
+    return unicodedata.normalize('NFKC', s)
+
+# No.4
+def count_chars(s, normalize=False):
+    """Returns a dict mapping from characters in ``s`` to their frequency."""
+    d = dict()
+    for c in s:
+        if normalized:
+            c = normalized(c)
+        if c not in d:
+            d[c] = 1
+        else:
+            d[c] += 1
+    return d
+```
+
+### 4. Fill in the blanks in the code so that the `mypy` type check passes
 
 **Example:**
 
 ```python
-from typing import Iterable, List, Tuple, TypeVar, cast
+from typing import Any, Iterable, List, Tuple, TypeVar
+
+# No.0
+T = TypeVar('T')
+
+def group_up(iterable: Iterable[T], n: int) -> List[Tuple[Any, ...]]:
+    """Group up each consecutive element of the iterable given.
+
+    Args:
+        iterable (Iterable): The iterable to make pairs with
+        n (int): The length of each group to make
+
+    Returns:
+        A new list of grouped up elements.
+
+    Raises:
+        ValueError: When ``iterable`` is not of length c x n, where c
+            is an integer. (i.e. when there are left-over elements)
+    """
+    ##### code begins #####
+    lst = []
+    group = []
+    for elem in iterable:
+        group.append(elem)
+        if len(group) == n:
+            lst.append(tuple(group))
+            group.clear()
+    assert len(group) != n, "somehow group wasn't cleared"
+    if len(group) != 0:
+        raise ValueError("iterable has left-over elements '{}'"
+                         .format(group))
+    return lst
+    #####  code ends  #####
+```
+
+```python
+from typing import *
+
+# No. 1
 T = TypeVar('T')
 
 def pair_up(iterable: Iterable[T]) -> List[Tuple[T, T]]:
-    lst = []
-    pair = []
-    for elem in iterable:
-        pair.append(elem)
-        if len(pair) == 2:
-            temp = tuple(pair)  
-            temp = cast(Tuple[T, T], temp) 
-            lst.append(temp)
-            pair.clear()
-    return lst
+    """Pairs up each consecutive element of the iterable given.
+
+    Args:
+        iterable (Iterable): The iterable to make pairs with
+
+    Returns:
+        A new list of paired up elements.
+
+    Raises:
+        ValueError: When ``iterable`` is not of length 2n, where n
+            is an integer. (i.e. when there is a left-over element)
+    """
+    ##### code begins #####
+    #####  code ends  #####
+
+# No.2
+def bar():
+    ##### code begins #####
+    #####  code ends  #####
+
+# No.3
+def bazz():
+    ##### code begins #####
+    #####  code ends  #####
+
+# No.4
+def buzz():
+    ##### code begins #####
+    #####  code ends  #####
 ```
 
 ## References
