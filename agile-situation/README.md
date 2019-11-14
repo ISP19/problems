@@ -7,12 +7,12 @@ In the situation below, which one of Agile is appropriate to solve the problem?
 5. One day in my project work, I do not know exactly the work I have to do because my friends already do my work and I don’t understand what they do, so I have to ……………………………….. Bt the Agile practice way.
 
 <details><summary>CLICK ME</summary>
-<p>
+
 Answer
 1. Blame doesn’t fix bugs.
 2. Learn the new; unlearn the old.
 3. Keep your project releasable at all times.
 4. Write code to be clear, not clever
 5. Use stand-up meetings
-</p>
+
 </details>
