@@ -1,5 +1,5 @@
 # Question
-Which pad is resemble a 
+Which pad is resemble a SOLID principle and why?
 
 
 # Answer
