@@ -67,7 +67,7 @@ Think about this question for a moment before getting into an answer.
   - [Security in Django](https://docs.djangoproject.com/en/2.2/topics/security/)
   - [Built-in template tags and filters](https://docs.djangoproject.com/en/2.2/ref/templates/builtins/)
   - [Working with forms](https://docs.djangoproject.com/en/2.2/topics/forms/)
-  - [Deployment checklist](https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/)
+  - [Deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/)
   
 - **OWASP**
   - [DOM Based XSS](https://www.owasp.org/index.php/DOM_Based_XSS)
