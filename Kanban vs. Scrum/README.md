@@ -1,17 +1,19 @@
 Kanban vs. Scrum
 ===
 **Kanban: Continuous improvement, flexible processes** <br />
-Kanban is all about visualizing your work, limiting work in progress, and maximizing efficiency (or flow). Kanban teams focus on reducing the time it takes to take a project (or user story) from start to finish. They do this by using a kanban board and continuously improving their flow of work. 
+Kanban is an agile methodology that is not necessarily iterative. Processes similar to Scrum have short iterations which imitating a project lifecycle on a small scale, having a distinct beginning and end for each iteration. Kanban allows the software be developed in one large development cycle.
 
-**Kanban cadence**: Kanban is based on a continuous workflow structure that keeps teams nimble and ready to adapt to changing priorities
+**Delivery Timelines**: Kanban is based on a continuous workflow structure that keeps teams nimble and ready to adapt to changing priorities
 
 **Release methodology**: In kanban, updates are released whenever they are ready, without a regular schedule or predetermined due dates.
 
-**Roles**: The whole team owns the kanban board. Some teams enlist an agile coach but, unlike scrum, there is no single “kanban master” who keeps everything running smoothly.
+**Roles**: There are no pre-defined roles for a team. Although there may still be a Project Manager. The whole team owns the kanban board. Some teams enlist an agile coach but, unlike scrum, there is no single “kanban master” who keeps everything running smoothly.
 
-**Key metrics**: Lead time, cycle, and Work In Progress (WIP) limits time are important metrics for kanban teams.
+**Key metrics**: Measures production using Lead time, cycle, and Work In Progress (WIP) limits time or the amount of time it takes to complete one full piece of a project from beginning to end.
 
 **Change philosophy**: A kanban workflow can change at any time. New work items can get added to the backlog and existing cards can get blocked or removed all together based on prioritization.
+
+**Delegation & Prioritization**: Uses a "pull system" or a systematic workflow that allows team members to only pull new tasks once the previous task is complete.
 
 For more understand on Kanban: watch the [video](https://www.youtube.com/watch?v=R8dYLbJiTUE)
 
@@ -21,13 +23,15 @@ What are the differences between Kanban and Scrum?
 
 Answer
 ---
-|                   |Kanban                       |Scrum                                          |
-|-------------------|-----------------------------|-----------------------------------------------|
-|Cadence            |Continuous flow              |Regular fixed length sprints (ie, 2 weeks)     |
-|Release methodology|Continuous delivery          |At the end of each sprint                      |
-|Roles              |No required roles            |Product owner, scrum master, development team  |
-|Key metrics        |Lead time, cycle time, WIP   |Velocity                                       |
-|Change philosophy  |Change can happen at any time|Teams should not make changes during the sprint|
+|                           |Kanban                          |Scrum                                          |
+|---------------------------|--------------------------------|-----------------------------------------------|
+|Delivery Timelines         |Continuous workflow             |Regular fixed length sprints (ie, 2 weeks)     |
+|Release methodology        |Continuous delivery             |At the end of each sprint                      |
+|Roles                      |No required roles               |Product owner, scrum master, development team  |
+|Key metrics                |Lead time, cycle time, WIP or the amount of time it takes to complete a project from beginning to end      |Velocity                                       |
+|Change philosophy          |Change can happen at any time   |Teams should not make changes during the sprint|
+|Best Applications          |Projects with varying priorities|Teams with stable priorities                   |
+|Delegation & Prioritization|Allows team members to only pull new tasks once the previous task is complete|An entire batch is pulled for each iteration|
 
 References
 ---
