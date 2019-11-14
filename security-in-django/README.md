@@ -60,7 +60,6 @@ Think about this question for a moment before getting into an answer.
 ### **Spoiler alert**
 > [Click here](answer/README.md) to get an answer.
 
-
 ## Useful references:
 
 - **Django official site**

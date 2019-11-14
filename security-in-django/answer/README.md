@@ -25,7 +25,6 @@ Fortunately, Django **would not let this happen** in the first place as it alrea
 Simply include `{% csrf_token %}` in the `form` section and let Django take care of the rest.
 
 
-
 ### Cross site scripting (XSS)
 
 To comprehend this topic, let me introduce you what JavaScript injection is.
@@ -90,9 +89,6 @@ Even worse, an attacker can execute a client-side script to steal sensitive user
 however, this is not __the case__ as __Django__ had released security patches since `version 2`, including this one—session cookies with `httpOnly` header. 
 
 Conversely, it can be the case when you settle on a lower-level web framework that needs extra implementation.
-
-
-
 
 #### Mitigation
 
