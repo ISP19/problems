@@ -18,10 +18,12 @@ For example
 If we do not want to use the keyword `choice_set`,but we whant to use the word `choices` intead, what part should be edited?
 
 <details><summary>Answer</summary>
+
 ```
 class Choice(models.Model):
     question = models.ForeignKey(Question,related_name="choice", on_delete=models.CASCADE)
 ```
+
 adding the kwarg `related_name` in the ForeignKey parameter
 ### The benefit of using related_name
 ---
