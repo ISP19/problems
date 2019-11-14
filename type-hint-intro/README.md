@@ -20,9 +20,10 @@ Content:
 - Reduce errors
   * Helps a lot in large projects
 
-While Python is known for _duck typing_ and _dynamic type checking_ (and some people
-will argue against any form of type checking), many agree that _static type checking_
-is still welcomed. 
+While Python is known for its _dynamic_ or "duck" typing (and some people will
+argue against any form of enforced type checking), many (including the retired
+BDFL) agree that _static type checking_ is still welcomed (in the form of 
+"gradual type hinting"). 
 
 ## Ways to type hint
 
@@ -122,7 +123,7 @@ This function only accepts data in the form of a `dict` with a `str` as the key.
 ```python
 class Question:
     ...
-    def get_voted_choice(self) -> models.QuerySet:
+    def get_voted_choices(self) -> models.QuerySet:
         """
         Returns an iterable that iterates over all choices of this
         question that has been voted.
@@ -159,6 +160,13 @@ What that means is basically that you can now do this
 x: int = 5
 ```
 
+or just this
+
+```python
+x: int
+```
+
+
 It might not look very useful cause many of the time that's pretty obvious and
 static type checkers and IDE can figure these things out pretty easily. But in
 some cases: 
@@ -183,7 +191,8 @@ possible for Python 2 (or C in case of the standard library) is using type
 comments and stub files.
 
 I'll just put a link down here to my (unfinished) slides (missing some examples)
-for the `typing` module) in case you want to know about them.
+for the `typing` module) in case you want to know about them (skip to the end of
+the slides).
 https://docs.google.com/presentation/d/1zoazXU6r4XZhYgjxGkpdDLirccB9TZg9mN40bW-0D6M/edit
 
 For other sources I suggest reading `typing` module in the docs and the PEPs it 
@@ -191,11 +200,111 @@ links to.
 
 ## Question / Problem / Task
 
-Add type hints where it's appropriate to these modules:
+> **Note:** to run `mypy` simply
+> ```bash
+> $ pip install mypy
+> ```
+> then
+> ```bash
+> $ mypy path/to/yourfile.py
+> ```
 
-- XXX
-- YYY
-- ZZZ
+### 1. Fill in the blanks with type annotations that would make objects on the right pass `mypy` type check
+That is, `mypy` should not yell at you for
+```
+x: <your answer> = <an object on the right>
+```
+no points for being too broad (if it's too broad, it doesn't help you with anything)
+
+**Example:**
+
+______int\______   0. `(3,)` or `(4,)`  ❌ # fails type check, no points  
+_____object\____   0. `(3,)` or `(4,)`  ❌ # passes type check, but too broad, no points  
+_____tuple\_____   0. `(3,)` or `(4,)`  ⭕ # passes type check, but could be better, partial credits  
+___Tuple\[int]\___ 0. `(3,)` or `(4,)`  ✔ # passes type check, full points  
+
+________________   1. `'\u005e\u005e'` or `'just a string'`  
+________________   2. `[<__main__.A object at 0x000001A6C4F18610>, <__main__.A object at 0x000001A6C4F18C40>]`  
+________________   3. `[1, 2, 3, 4, 5]` or `[2.75, 5.5, 8.25]` but not `[1, 2.]`  
+________________   4. `{'one': 1, 'two': 2, 'three': 3}` but not `{'one': '1', 'two': '2'}`  
+________________   5. `<QuerySet []>` or `range()`  
+________________   6. `[(0, 5), (5, 0), (5, 5)]`    
+________________   7. `lambda x: None`  
+________________   8. `lambda: 'some string'`
+
+### 2. For each type annotation, give an example of objects that would pass `mypy` type check
+
+**Example:**
+
+&nbsp; 0. `Dict[str, Dict[str, Any]]`
+```pythonstub
+{'data': {'question_id': 34, 'choice_id': 132, 'error_msg': None}}
+```
+\
+&nbsp; 1. `Iterable[Union[int, float]]`  
+```
+
+```
+&nbsp; 2. `Sequence[Dict[str, float]]`
+```
+
+```
+&nbsp; 3.  `Any`
+```
+
+```
+&nbsp; 4.  `None`
+```
+
+```
+&nbsp; 5.  `Dict[str, Optional[str]]`
+```
+
+```
+&nbsp; 6.  `Literal['r', 'rt', 'w', 'wt']`
+```
+
+```
+&nbsp; 7.  `N = TypeVar('Number', int, float); Tuple[N, N]`
+```
+
+```
+&nbsp; 8.  `Mapping[float, int]`
+```
+
+```
+
+### 3. Add appropriate type hints to these code snippets
+There should be type hints for all function/method's parameters and return value.
+Try to be forgiving for parameter types and specific for return type.
+
+**Example:**
+```python
+from typing import *
+def my_map(a: Callable, b: Iterable) -> Iterator:
+    return map(a, b)
+```
+
+### 4. Fill in the blanks in the code so that the `mypy` type checks passes
+
+**Example:**
+
+```python
+from typing import Iterable, List, Tuple, TypeVar, cast
+T = TypeVar('T')
+
+def pair_up(iterable: Iterable[T]) -> List[Tuple[T, T]]:
+    lst = []
+    pair = []
+    for elem in iterable:
+        pair.append(elem)
+        if len(pair) == 2:
+            temp = tuple(pair)
+            temp = cast(Tuple[T, T], temp)
+            lst.append(temp)
+            pair.clear()
+    return lst
+```
 
 ## References
 
@@ -204,4 +313,4 @@ Add type hints where it's appropriate to these modules:
 - https://www.python.org/dev/peps/pep-0526/
 - https://www.python.org/dev/peps/pep-3107/
 - [Type Hints - Guido van Rossum - PyCon 2015](https://www.youtube.com/watch?v=2wDvzy6Hgxg)  
-  If I didn't convince you to use type hints, maybe he will. Recommended video.
+  If I didn't convince you to use type hints, maybe he will. Highly recommended video.
