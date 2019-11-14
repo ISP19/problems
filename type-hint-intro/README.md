@@ -221,7 +221,7 @@ no points for being too broad (if it's too broad, it doesn't help you with anyth
 ______int\______   0. `(3,)` or `(4,)`  ❌ # fails type check, no points  
 _____object\____   0. `(3,)` or `(4,)`  ❌ # passes type check, but too broad, no points  
 _____tuple\_____   0. `(3,)` or `(4,)`  ⭕ # passes type check, but could be better, partial credits  
-___Tuple\[int]\___ 0. `(3,)` or `(4,)`  ✔ # passes type check, full points  
+___Tuple\[int]\___ 0. `(3,)` or `(4,)`  ⭕ # passes type check, full points  
 
 ________________   1. `'\u005e\u005e'` or `'just a string'`  
 ________________   2. `[<__main__.A object at 0x000001A6C4F18610>, <__main__.A object at 0x000001A6C4F18C40>]`  
@@ -299,8 +299,8 @@ def pair_up(iterable: Iterable[T]) -> List[Tuple[T, T]]:
     for elem in iterable:
         pair.append(elem)
         if len(pair) == 2:
-            temp = tuple(pair)
-            temp = cast(Tuple[T, T], temp)
+            temp = tuple(pair)  
+            temp = cast(Tuple[T, T], temp) 
             lst.append(temp)
             pair.clear()
     return lst
