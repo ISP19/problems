@@ -23,7 +23,7 @@ A. from "yourappname".models import *
 B. urls.py
 C. from django.shortcuts import render
 D. Name of your app.
-E. urspatterns
+E. urlspatterns
 F. static
 G. from django.http import HttpResponse
 H. views.py
