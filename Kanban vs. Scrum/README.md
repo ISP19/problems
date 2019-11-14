@@ -1,7 +1,7 @@
 Kanban vs. Scrum
 ===
 **Kanban: Continuous improvement, flexible processes** <br />
-Kanban is an agile methodology that is not necessarily iterative. Processes are similar to Scrum, which have short iterations. It imitating a project lifecycle on a small scale by having a distinct beginning and ending for each iteration. Kanban allows the software be developed in one large development cycle.
+Kanban is an agile methodology that is not necessarily iterative. Processes are similar to Scrum, which have short iterations. It imitating a project lifecycle on a small scale by having a distinct beginning and ending for each iteration. Kanban allows the software to be developed in one large development cycle.
 
 **Delivery Timelines**: Kanban is based on a continuous workflow structure that keeps teams nimble and ready to adapt to changing priorities
 
