@@ -60,15 +60,20 @@ Think about this question for a moment before getting into an answer.
 ### **Spoiler alert**
 > [Click here](answer/README.md) to get an answer.
 
+
 ## Useful references:
 
-- Django official site
+- **Django official site**
   - [Security in Django](https://docs.djangoproject.com/en/2.2/topics/security/)
   - [Built-in template tags and filters](https://docs.djangoproject.com/en/2.2/ref/templates/builtins/)
   - [Working with forms](https://docs.djangoproject.com/en/2.2/topics/forms/)
+  - [Deployment checklist](https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/)
   
-- (OWASP) [Top 10 list of security vulnerabilities in 2017](https://www.owasp.org/index.php/Top_10-2017_Top_10)
+- **OWASP**
+  - [DOM Based XSS](https://www.owasp.org/index.php/DOM_Based_XSS)
+  - [Session hijacking attack](https://www.owasp.org/index.php/Session_hijacking_attack)
+  - [Top 10 list of security vulnerabilities in 2017](https://www.owasp.org/index.php/Top_10-2017_Top_10)
 
 - Instructor's recommendations
-  - https://www.youtube.com/watch?v=Pavl4MYFfSw
+  - ([**hacker101.com**](https://www.hacker101.com/)) https://www.youtube.com/watch?v=Pavl4MYFfSw
   - https://www.softwaretestinghelp.com/javascript-injection-tutorial/
