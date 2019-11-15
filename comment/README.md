@@ -3,7 +3,7 @@
 
 ### Question
 ---
-Tick all correct correct choice about comment.
+Tick all correct choices about comment.
 
 1. [ ] You can have a no meaning variable or method names and describe in comment later.
 2. [ ] You can skip comment about variable or method names that understandable.
