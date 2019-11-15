@@ -23,7 +23,7 @@ import unittest
 class ExampeleTest(unittest.TestCase): 
     # Returns True or False.
     def test_bool(self):		 
-	    self.assertTrue(True)
+	self.assertTrue(True)
 
     def test_add(self):
         # 13/8 = 3/4 + 7/8
