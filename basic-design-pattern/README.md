@@ -1,7 +1,7 @@
 ## Design Patterns in Django
 ### Question
 
-Basic Design patterns of Django have 4 essential components
+Basic Design patterns of Django have 4 essential components.
 
 Models (models.py)
 Forms (forms.py)
