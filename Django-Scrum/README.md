@@ -2,13 +2,13 @@
 
 ## Question 1
 Describe these files that located in django project:
-- manage.py
-- settings.py
-- _init_.py
-- urls.py
+- manage.py,
+- settings.py,
+- _init_.py,
+- urls.py,
 - wsgi.py
-- manage.py
 ## Answer for question 1
+- manage.py
 Used to control your django project on the server.
 - settings.py
 Contains all informations which used in your project such as database or middleware and path to main urls config.
