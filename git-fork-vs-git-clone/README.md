@@ -32,7 +32,9 @@ The forked repository is mostly static. It exists in order to allow you to publi
 
 The cloned repository exists as a remote location where your project is stored. You can clone your repository to create a local copy on your computer so that you can sync between both the local and remote locations of the project. But if the project is owned by someone else you won't be able to contribute back to it unless you are specifically invited as a collaborator. So that's why you have the forked repo, so you can push changes to it for others to see and review.
 
-Answer 2: a, b, c, e, g
+Answer 2 : 
+
+a, b, c, e, g
 
 **Reference**
 
