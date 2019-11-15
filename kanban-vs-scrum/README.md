@@ -1,51 +1,46 @@
-Kanban vs. Scrum
+Kanban vs Scrum
 ===
 **Kanban: Continuous improvement, flexible processes** <br />
-Kanban is an agile methodology that is not necessarily iterative. Processes are similar to Scrum, which have short iterations. It imitating a project lifecycle on a small scale by having a distinct beginning and ending for each iteration. Kanban allows the software to be developed in one large development cycle.
+Kanban is an agile methodology for managing work as it moves through a process. The processes are similar to Scrum, which Kanban also have short iterations and aim to reduce waste. 
 
-**Delivery Timelines**: Kanban is based on a continuous workflow structure that keeps teams nimble and ready to adapt to changing priorities
+**Delivery Timelines**: Kanban is based on a continuous workflow structure which products and processes delivered continuously. These will keeps team members ready to adapt to changing.
 
-**Release methodology**: In kanban, updates are released whenever they are ready, without a regular schedule or predetermined due dates.
+**Release methodology**: There is no fixed time to deliver a task. The tasks or updates of each task are released whenever in ready status.
 
-**Roles**: There are no pre-defined roles for a team. Although there may still be a Project Manager. The whole team owns the kanban board. Some teams enlist an agile coach but, unlike scrum, there is no single “kanban master” who keeps everything running smoothly.
+**Roles**: There are no fixed roles for a team. The whole team owns the Kanban board (one of the tools can be used to manage the flow of work).
 
-**Key metrics**: Measures production using Lead time, Cycle time, and Work In Progress (WIP) limits time or the amount of time it takes to complete one full piece of a project from beginning to end.
+**Measurement of productivity**: Measures production using Lead time, Cycle time, and Work In Progress (WIP) limits the time, Which focusing on the amount of time it takes to complete a project from beginning to ending.
 
-**Change philosophy**: A kanban workflow can change at any time. New work items can get added to the backlog and existing cards can get blocked or removed all together based on prioritization.
+**Change philosophy**: Change can happen at any time. New tasks can be added to the backlog and old tasks can get removed based on prioritization.
 
-**Delegation & Prioritization**: Uses a "pull system" or a systematic workflow that allows team members to only pull new tasks once the previous task is complete.
+**Delegation & Prioritization**: Uses a pull system which means tasks are pulled from the Kanban board by team members after the previous task is complete.
 
 For more understand on Kanban: watch the [video](https://www.youtube.com/watch?v=R8dYLbJiTUE)
 
 Question
 ---
-What are the differences between Kanban and Scrum?
+Given situations and match which situation should use **Kanban** or **Scrum**?
+
+1. ___ Every team member will do the same roles.<br/>
+2. ___ There will be a fixed estimate time for each task.<br/>
+3. ___ Measurement of productivity is about the amount of time it takes to complete a project from beginning to end.<br/>
+4. ___ Changes during the working period on each task are strongly discouraged.<br/>
+5. ___ Team members will execute the work while there will be one role defines the goals and objective of tasks.<br/>
+6. ___ Release whenever a task is ready.
 
 Answer
 ---
-|                           |Kanban                          |Scrum                                          |
-|---------------------------|--------------------------------|-----------------------------------------------|
-|Delivery Timelines         |Continuous workflow             |Regular fixed length sprints (ie, 2 weeks)     |
-|Release methodology        |Continuous delivery             |At the end of each sprint                      |
-|Roles                      |No required roles               |Product owner, scrum master, development team  |
-|Key metrics                |Lead time, Cycle time, WIP or the amount of time it takes to complete a project from beginning to end      |Velocity                                       |
-|Change philosophy          |Change can happen at any time   |Teams should not make changes during the sprint|
-|Best Applications          |Projects with varying priorities|Teams with stable priorities                   |
-|Delegation & Prioritization|Allows team members to only pull new tasks once the previous task is complete|An entire batch is pulled for each iteration|
+1. <span style="text-decoration:underline"> **Kanban** </span> Every team member will do the same roles.<br/>
+2. <span style="text-decoration:underline"> **Scrum** </span> There will be a fixed estimate time for each task.<br/>
+3. <span style="text-decoration:underline"> **Kanban** </span> Measurement of productivity is about the amount of time it takes to complete a project from beginning to end.<br/>
+4. <span style="text-decoration:underline"> **Scrum** </span> Changes during the working period on each task are strongly discouraged.<br/>
+5. <span style="text-decoration:underline"> **Scrum** </span> Team members will execute the work while there will be one role defines the goals and objective of tasks.
+4. <span style="text-decoration:underline"> **Kanban** </span> Release whenever a task is ready to release.<br/>
 
 References
 ---
 - [Kanban vs. Scrum](https://www.atlassian.com/agile/kanban/kanban-vs-scrum) by Max Rehkopf, Atlassian
-- [Scrum vs Kanban - What's the Difference?](https://www.youtube.com/watch?v=rIaz-l1Kf8w&feature=youtu.be)
-- [Kanban vs Scrum](https://leankit.com/learn/kanban/kanban-vs-scrum/) – Video
+- [Kanban vs Scrum](https://leankit.com/learn/kanban/kanban-vs-scrum/)
+- [What is Agile Kanban Methodology?](https://www.inflectra.com/methodologies/kanban.aspx)
+- [Scrum vs Kanban - What's the Difference?](https://www.youtube.com/watch?v=rIaz-l1Kf8w&feature=youtu.be) – Video
 - [What is Kanban](https://www.youtube.com/watch?v=R8dYLbJiTUE) – Video
-
-### Plagiarism
-
-Every sentence in this document appears to be copied from other sources, without acknowledgement.  Acknowledgement of Atlassian added only after I pointed out the plagiarism to Chananchida.
-
-Sources copied:
-
-* https://www.atlassian.com/agile/kanban/kanban-vs-scrum
-* https://www.inflectra.com/methodologies/kanban.aspx
-* https://leankit.com/learn/kanban/kanban-vs-scrum/
