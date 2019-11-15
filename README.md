@@ -6,6 +6,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 
 | Topic                                            | Author |
 |:-------------------------------------------------|--------|
+| [Draw Git Commit Graph](git-command/README)      | Tetach |
+| [DRY Principle and Django Templates](dry-principle/README)| Sivanat |
 | [PAD Tips and Scrum Practices](pad-tips-and-scrum/README) | Nutthanich |
-| [Draw Git Commit Graph](git-command/README)     | Tetach |
 | [Security in Django](security-in-django/README) | Tharatorn |
