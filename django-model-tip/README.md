@@ -17,6 +17,23 @@ For example
 ```
 If we do not want to use the keyword `choice_set`,but we whant to use the word `choices` intead, what part should be edited?
 
+models.py
+
+```
+from django.db import models
+
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField('date published')
+
+
+class Choice(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    choice_text = models.CharField(max_length=200)
+    votes = models.IntegerField(default=0)
+```
+
 <details><summary>Answer</summary>
 
 ```
