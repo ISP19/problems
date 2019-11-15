@@ -218,10 +218,10 @@ no points for being too broad (if it's too broad, it doesn't help you with anyth
 
 **Example:**
 
-______int\______   0. `(3,)` or `(4,)`  ❌ # fails type check, no points  
-_____object\____   0. `(3,)` or `(4,)`  ❌ # passes type check, but too broad, no points  
-_____tuple\_____   0. `(3,)` or `(4,)`  ⭕ # passes type check, but could be better, partial credits  
-___Tuple\[int]\___ 0. `(3,)` or `(4,)`  ⭕ # passes type check, full points  
+______int\_\_\_\_\_\_   0. `(3,)` or `(4,)`  ❌ # fails type check, no points  
+_____object\_\_\_\_   0. `(3,)` or `(4,)`  ❌ # passes type check, but too broad, no points  
+_____tuple\_\_\_\_\_   0. `(3,)` or `(4,)`  ⭕ # passes type check, but could be better, partial credits  
+___Tuple\[int]\_\_\_ 0. `(3,)` or `(4,)`  ⭕ # passes type check, full points  
 
 __________________   1. `'\u005e\u005e'` or `'just a string'`  
 __________________   2. `[<__main__.A object at 0x000001A6C4F18610>, <__main__.A object at 0x000001A6C4F18C40>]`  

@@ -1,13 +1,13 @@
 ### 1. Fill in the blanks with type annotations that would make objects on the right pass `mypy` type check
 
-________str\_______         1. `'\u005e\u005e'` or `'just a string'`  
-______List\[A]\______       2. `[<__main__.A object at 0x000001A6C4F18610>, <__main__.A object at 0x000001A6C4F18C40>]`    
+________str\_\_\_\_\_\_\_         1. `'\u005e\u005e'` or `'just a string'`  
+______List\[A]\_\_\_\_\_\_       2. `[<__main__.A object at 0x000001A6C4F18610>, <__main__.A object at 0x000001A6C4F18C40>]`    
 _List\[Union\[int, float]\_ 3. `[1, 2, 3, 4, 5]` or `[2.75, 5.5, 8.25]` or `[1, 2.]`  
-____Dict\[str, int]\____    4. `{'one': 1, 'two': 2, 'three': 3}` but not `{'one': '1', 'two': '2'}`  
-______Iterable\_____        5. `<QuerySet []>` or `range()`  
+____Dict\[str, int]\_\_\_\_    4. `{'one': 1, 'two': 2, 'three': 3}` but not `{'one': '1', 'two': '2'}`  
+______Iterable\_\_\_\_\_        5. `<QuerySet []>` or `range()`  
 __List\[Tuple\[int, int]]\_ 6. `[(0, 5), (5, 0), (5, 5)]`    
 __Callable\[..., None]\_    7. `lambda x: None`  
-___Callable\[[], str]\___   8. `lambda: 'some string'`
+___Callable\[[], str]\_\_\_   8. `lambda: 'some string'`
 
 
 ### 3. Add appropriate type hints to these code snippets
