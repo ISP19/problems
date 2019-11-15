@@ -38,7 +38,7 @@ class Choice(models.Model):
 
 ```
 class Choice(models.Model):
-    question = models.ForeignKey(Question,related_name="choice", on_delete=models.CASCADE)
+    question = models.ForeignKey(Question,related_name="choices", on_delete=models.CASCADE)
 ```
 
 adding the kwarg `related_name` in the ForeignKey parameter
