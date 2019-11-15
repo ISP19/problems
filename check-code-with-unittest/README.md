@@ -39,8 +39,8 @@ if __name__ == '__main__':
 ```
 
 3.  - **assertEqual()**: to check for an expected result.
-    - **assertTrue() or assertFalse()**: to verify a condition
-    - **assertRaises()**: to verify that a specific exception gets raised
+    - **assertTrue() or assertFalse()**: to verify a condition.
+    - **assertRaises()**: to verify that a specific exception gets raised.
 
 4. Passing the -v option to your test script will instruct unittest.main() to enable a higher level of verbosity, and produce the following output:
 
@@ -58,5 +58,5 @@ OK
 
 You can learn more with these:
 
-* https://docs.python.org/3/library/unittest.html#basic-example
-* https://www.geeksforgeeks.org/unit-testing-python-unittest/
+- [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html#basic-example)
+- [Unit Testing in Python](https://www.geeksforgeeks.org/unit-testing-python-unittest/)
