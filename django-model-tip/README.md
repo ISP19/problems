@@ -15,7 +15,7 @@ For example
 >>> q.choice_set.count()
 3
 ```
-If we do not want to use the keyword `choice_set`,but we whant to use the word `choices` intead, what part should be edited?
+If we do not want to use the keyword `choice_set`,but we whant to use the word `choices` intead, which part should be edited?
 
 models.py
 
