@@ -38,12 +38,13 @@ if __name__ == '__main__':
 	unittest.main()
 ```
 
-3.  *assertEqual() to check for an expected result
-    *assertTrue() or assertFalse() to verify a condition
-    *assertRaises() to verify that a specific exception gets raised
+3.  - **assertEqual()**: to check for an expected result.
+    - **assertTrue() or assertFalse()**: to verify a condition
+    - **assertRaises()**: to verify that a specific exception gets raised
 
 4. Passing the -v option to your test script will instruct unittest.main() to enable a higher level of verbosity, and produce the following output:
 
+```
 test_bool (__main__.ExampeleTest) ... ok
 test_add (__main__.ExampeleTest) ... ok
 
@@ -51,3 +52,4 @@ test_add (__main__.ExampeleTest) ... ok
 Ran 2 tests in 0.001s
 
 OK
+```
