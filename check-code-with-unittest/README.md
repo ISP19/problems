@@ -18,24 +18,25 @@ White Box Testing method is used for Unit testing.
 
 1.
 ```python
-import unittest 
+import unittest
+
 class ExampeleTest(unittest.TestCase): 
-	# Returns True or False. 
+	# Returns True or False.
 	def test_bool(self):		 
 		self.assertTrue(True)
-    
+
     def test_add(self):
         # 13/8 = 3/4 + 7/8
         self.assertEqual(Numbertest(13,8), Numbertest(3,4)+Fraction(7,8))
         #Numbertest is a class that you want to test.
 if __name__ == '__main__': 
-	unittest.main() 
+    unittest.main() 
 ```
 
 2.
 ```python
-if __name__ == '__main__': 
-	unittest.main()
+    if __name__ == '__main__': 
+	    unittest.main()
 ```
 
 3.  - **assertEqual()**: to check for an expected result.
