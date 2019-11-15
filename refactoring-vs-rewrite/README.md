@@ -2,14 +2,14 @@
 # Refactoring Vs Rewrite
 
 ## **Refactoring**
-Refactoring is the way that we improve code without changing any behavior of the system.
+Refactoring is the way that we improve code without changing The behavior of the system.
 
 <br>
 
 **Learn more about refactoring**
 >https://refactoring.com/
 
-## **Rewrite**
+## **Rewriting**
 
 Rewrite is the process of changing a software system in such a way that we rewrite a new code from all the existing code without re-use of it.
 
@@ -21,13 +21,13 @@ Rewrite is the process of changing a software system in such a way that we rewri
 
 2. Refactoring starts with code that already exists and we change or improve as needed. How does rewriting work?
 
-3. What can be done during the development process? why?
+3. Which one is less likely to disrupt the development process? why?
 
-4. If we want to improve or maintain both the old system and the new system at the same time what should we use?
+4. If we want to improve or maintain both the old system and the new system at the same time which should we use?
 
 
 ### **Answer**
-1. Refactoring because rewrite will change the original behavior of the system and may cause a very bad problem.
+1. Refactoring because rewriting may change the original behavior of the system and may cause more time spending.
 
 2. Rewrite starts with code that not exists, for replaces the system that we want.
 
@@ -36,8 +36,8 @@ Rewrite is the process of changing a software system in such a way that we rewri
 4. Refactoring
 
 
-### ***Reference***
-- [**Refactoring vs Rewrite.**](https://medium.com/@sergioserra/application-refactoring-vs-rewrite-eaa25d9eea4d)
+### Reference
+- [**  **](https://medium.com/@sergioserra/application-refactoring-vs-rewrite-eaa25d9eea4d)
 
 - [**Why refactoring code is almost always better than rewriting it.**](https://www.ben-morris.com/why-refactoring-code-is-almost-always-better-than-rewriting-it/)
 
