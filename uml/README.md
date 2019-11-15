@@ -11,4 +11,4 @@ Draw a UML Class Diagram, show the relationship of each object by using symbols 
 
 ## Answer
 
-![Screenshot](Class Diagram with UML Notation.png)
+![Screenshot](https://github.com/ISP19/problems/blob/vichyawat/uml/Class%20Diagram%20with%20UML%20Notation.png)
