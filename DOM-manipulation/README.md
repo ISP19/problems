@@ -85,3 +85,8 @@ function changeTextcolor() {
 setInterval(changeTextcolor, 1000)
 ```
 </details>
+
+# Reference
+- [What’s the Document Object Model, and why you should know how to use it.](https://www.freecodecamp.org/news/whats-the-document-object-model-and-why-you-should-know-how-to-use-it-1a2d0bc5429d/)
+
+- [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
