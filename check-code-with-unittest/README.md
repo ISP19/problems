@@ -30,13 +30,13 @@ class ExampeleTest(unittest.TestCase):
         #Numbertest is a class that you want to test.
 if __name__ == '__main__': 
 	unittest.main() 
-    ```
+```
 
 2.
 ```python
 if __name__ == '__main__': 
 	unittest.main()
-    ```
+```
 
 3.  *assertEqual() to check for an expected result
     *assertTrue() or assertFalse() to verify a condition
