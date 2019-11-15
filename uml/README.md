@@ -18,3 +18,8 @@ Draw a UML Class Diagram, show the relationship of each object by using symbols 
 - Use ━◇ for `Creep` to show the **aggregation** that `Tortoise` is part of the `Creep`
 
 - Use ━ for `Cat` and `Bird` to show the **association** that they can eat or be eaten.
+
+## References
+
+- [Unified Modeling Language](https://en.wikipedia.org/wiki/Unified_Modeling_Language) - Wikipedia
+- [UML Class Diagram Relationships Explained with Examples](https://creately.com/blog/diagrams/class-diagram-relationships/#:~:targetText=What%20are%20the%20Class%20Diagrams,and%20the%20relationships%20among%20them.&targetText=In%20the%20example%2C%20a%20class,%E2%80%9Cloan%20account%E2%80%9D%20is%20depicted.) - Creately
