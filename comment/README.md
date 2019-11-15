@@ -14,11 +14,11 @@ Tick all correct correct choice about comment.
 ### Answer
 ---
 
-1. [0] You can have a no meaning variable or method names and describe in comment later.
-2. [1] You can skip comment about variable or method names that understandable.
-3. [0] More comment, More quality of your code.
-4. [1] You should always write your code as if comments didn't exist.
-5. [1] Good code comments explain why things are done, not what is done.
+1. [ ] You can have a no meaning variable or method names and describe in comment later.
+2. [x] You can skip comment about variable or method names that understandable.
+3. [ ] More comment, More quality of your code.
+4. [x] You should always write your code as if comments didn't exist.
+5. [x] Good code comments explain why things are done, not what is done.
 
 References
 ---
