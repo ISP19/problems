@@ -12,6 +12,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Kanban versus Scrum](kanban-vs-scrum/README)    | Chananchida (1) |
 | [PAD Tips and Scrum Practices](pad-tips-and-scrum/README) | Nutthanich |
 | [Security in Django](security-in-django/README)  | Tharatorn |
+| [Fix problems on my project by PAD Tips](agile_tips/README) | Thun |
 
 
 (1) This entire document document was copied (plagiarised) from other sources.
