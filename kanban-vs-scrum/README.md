@@ -35,7 +35,17 @@ Answer
 
 References
 ---
-- [Kanban vs. Scrum](https://www.atlassian.com/agile/kanban/kanban-vs-scrum) by MAX REHKOPF
+- [Kanban vs. Scrum](https://www.atlassian.com/agile/kanban/kanban-vs-scrum) by Max Rehkopf, Atlassian
 - [Scrum vs Kanban - What's the Difference?](https://www.youtube.com/watch?v=rIaz-l1Kf8w&feature=youtu.be)
 - [Kanban vs Scrum](https://leankit.com/learn/kanban/kanban-vs-scrum/) – Video
 - [What is Kanban](https://www.youtube.com/watch?v=R8dYLbJiTUE) – Video
+
+### Plagiarism
+
+Every sentence in this document appears to be copied from other sources, without acknowledgement.  Acknowledgement of Atlassian added only after I pointed out the plagiarism to Chananchida.
+
+Sources copied:
+
+* https://www.atlassian.com/agile/kanban/kanban-vs-scrum
+* https://www.inflectra.com/methodologies/kanban.aspx
+* https://leankit.com/learn/kanban/kanban-vs-scrum/
