@@ -25,19 +25,9 @@ Which of the following is/are true about inspection process (check all the corre
 6. _______  The inspection meeting should not more than two hours.
 
 
-### Answer
-
-1. _______  Sometimes the author will lead the inspection process instead of the moderator.
-2. _______  The team members read the documents or work product and note suspected defects in the inspection meeting.
-3. _______  The author describes the important features of the product to the inspection team in the inspection meeting.
-4. _______  The work product is only approved by the moderator.
-5. __ x __  Recorder does not write the information of product, only records defects and issues.
-6. __ x __  The inspection meeting should not more than two hours.
-
 
 **References**
 
-- [Improving Quality Through Software Inspections](https://www.processimpact.com/articles/inspects.pdf)
-- [Software Inspection Process](http://davidfrico.com/s-sip-tech.pdf)
-- [Software Review](https://cpske.github.io/ISP/code-review/Reviews.pdf)
-- [Reviews](https://cpske.github.io/ISP/code-review/Reviews-Stellman-and-Greene.pdf)
+- [Improving Quality Through Software Inspections](https://www.processimpact.com/articles/inspects.pdf) at Process Impact
+- [Software Inspection Process](http://davidfrico.com/s-sip-tech.pdf) by David Frico
+- [Reviews](https://cpske.github.io/ISP/code-review/Reviews-Stellman-and-Greene.pdf) in *Applied Software Project Management* by Stellman and Greene 
