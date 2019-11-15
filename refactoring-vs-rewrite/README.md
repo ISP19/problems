@@ -37,7 +37,7 @@ Rewrite is the process of changing a software system in such a way that we rewri
 
 
 ### Reference
-- [**  **](https://medium.com/@sergioserra/application-refactoring-vs-rewrite-eaa25d9eea4d)
+- [**Compare refactoring and rewriting includes reasons why should we use this process.**](https://medium.com/@sergioserra/application-refactoring-vs-rewrite-eaa25d9eea4d)
 
 - [**Why refactoring code is almost always better than rewriting it.**](https://www.ben-morris.com/why-refactoring-code-is-almost-always-better-than-rewriting-it/)
 
