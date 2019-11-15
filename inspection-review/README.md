@@ -15,15 +15,19 @@ Inspection roles
 
 ### Question
 
-Which of the following is/are true about inspection process (check all the correct answers)
+Which of the following is/are true about inspection process (check all correct answers)
 
-1. _______  Sometimes the author will lead the inspection process instead of the moderator.
-2. _______  The team members read the documents or work product and note suspected defects in the inspection meeting.
-3. _______  The author describes the important features of the product to the inspection team in the inspection meeting.
-4. _______  The work product is only approved by the moderator.
-5. _______  Recorder does not write the information of product, only records defects and issues.
-6. _______  The inspection meeting should not more than two hours.
+1. ______  Sometimes the author will lead the inspection process instead of the moderator.
+2. ______  The team members read the documents or work product and note suspected defects in the inspection meeting.
+3. ______  The author describes the important features of the product to the inspection team in the inspection meeting.
+4. ______  The work product is only approved by the moderator.
+5. ______  Recorder does not write the information of product, only records defects and issues.
+6. ______  The inspection meeting should not more than two hours.
 
+
+### Answer
+
+Email or message your answer to Wijantra to verify it.
 
 
 **References**
