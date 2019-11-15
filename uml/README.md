@@ -13,8 +13,8 @@ Draw a UML Class Diagram, show the relationship of each object by using symbols 
 
 ![Screenshot](https://github.com/ISP19/problems/blob/vichyawat/uml/Class%20Diagram%20with%20UML%20Notation.png)
 
-- Use ⇾ for `Tortoise`, `Cat` and `Bird` to show the inheritance that there is the subclass of `Animal`.
+- Use ⇾ for `Tortoise`, `Cat` and `Bird` to show the **inheritance** that there is the subclass of `Animal`.
 
-- Use ━◇ for `Creep` to show the aggregation that `Tortoise` is part of the `Creep`
+- Use ━◇ for `Creep` to show the **aggregation** that `Tortoise` is part of the `Creep`
 
-- Use ━ for `Cat` and `Bird` to show the association that they can eat or be eaten.
+- Use ━ for `Cat` and `Bird` to show the **association** that they can eat or be eaten.
