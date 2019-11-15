@@ -35,8 +35,8 @@ if __name__ == '__main__':
 
 2.
 ```python
-    if __name__ == '__main__': 
-	    unittest.main()
+if __name__ == '__main__': 
+unittest.main()
 ```
 
 3.  - **assertEqual()**: to check for an expected result.
