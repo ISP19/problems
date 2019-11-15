@@ -11,3 +11,4 @@ Draw a UML Class Diagram, show the relationship of each object by using symbols 
 
 ## Answer
 
+![Screenshot](Class Diagram with UML Notation.png)
