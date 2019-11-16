@@ -43,7 +43,7 @@ the activity below.
 
 ## Answer
 
-1. Principle number 6: Face-to-face conversation is the best form of communication (co-location) 
+1. Principle number 6: A face-to-face conversation is the best form of communication (co-location) 
 
 2. Principle number 2: Welcome changing requirements, even in late development.
 
