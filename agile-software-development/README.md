@@ -21,8 +21,7 @@ Given a list of The Manifesto for Agile Software Development is based on twelve 
 11. Best architectures, requirements, and designs emerge from self-organizing teams
 12. Regularly, the team reflects on how to become more effective and adjusts accordingly
 
-Which statement from the manifesto would solve or best describe
-the activity below.
+Which statement from the manifesto would solve or best describe the activity below.
 
 1. ____ The best way to reduce the cycle time typically taken when questions and answers are mediated through phone, chat or email is?
 
