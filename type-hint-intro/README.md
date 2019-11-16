@@ -1,19 +1,19 @@
-# Type Hinting –– an introduction
+# Type Hinting –– an Introduction
 
 Content:
 
 - [Motivations for using type hints](#motivations-for-using-type-hints)
 - [Ways to type hint](#ways-to-type-hint)
-  - [Function Annotations (PEP 3107)](#function-annotations-pep-3107)
+  - [Function annotations (PEP 3107)](#function-annotations-pep-3107)
   - [The typing module (PEP 484)](#the-typing-module-pep-484)
-  - [Variable Annotations (PEP 526)](#variable-annotations-pep-526)
+  - [Variable annotations (PEP 526)](#variable-annotations-pep-526)
   - [Summary](#summary)
 - [Question / Problem / Task](#question--problem--task)
 
 ## Motivations for using type hints
 
-- Improved **readability** for humans and machine
-  * Allow/Improve code completion for IDEs
+- Improved **readability** for humans and computers
+  * Improve code completion and refactoring in IDEs
 - Acts as live **documentation**
   * Solves the problem of docstrings not being maintained
   * Docstrings don't allow complex types
@@ -22,12 +22,12 @@ Content:
 
 While Python is known for its _dynamic_ or "duck" typing (and some people will
 argue against any form of enforced type checking), many (including the retired
-BDFL) agree that _static type checking_ is still welcomed (in the form of 
+BDFL Guido van Rossum) agree that _static type checking_ is still welcome (in the form of 
 "gradual type hinting"). 
 
 ## Ways to type hint
 
-### Function Annotations (PEP 3107)
+### Function annotations (PEP 3107)
 
 Function annotations were introduced in [**PEP 3107**](https://www.python.org/dev/peps/pep-3107/)
 and is available from Python 3.0.
@@ -80,11 +80,11 @@ any type issues, before actual runtime.
 
 ### The typing module (PEP 484)
 
-[**PEP 484**](https://www.python.org/dev/peps/pep-0484/) introduces the 
+[**PEP 484**](https://www.python.org/dev/peps/pep-0484/) introduced the 
 [`typing`](https://docs.python.org/3/library/typing.html) module,
 which allows for more complex types.
 
-Let's se it in action.
+Let's see it in action.
 
 ```python
 from typing import Any, Union
@@ -141,7 +141,7 @@ Some other useful ones I've used:
 
 See the [`typing`](https://docs.python.org/3/library/typing.html) module for more details.
 
-### Variable Annotations (PEP 526)
+### Variable annotations (PEP 526)
 
 [**PEP 526**](https://www.python.org/dev/peps/pep-0526/) introduces a new syntax
 for defining variables available from Python 3.6 onwards.
@@ -177,14 +177,15 @@ choice_text: str = Cls.call(some_object).complicated.chained.access().andfunc().
 
 The IDE already lost track of what the types are after the first few calls. (And
 probably also whoever is reading your code.) By adding type hints to the variable
-IDE regains knowledge of what type the variable is, so it can now do code
-completion for you again, and whoever your code can now be a little bit happier.
+IDE regains knowledge of what type each variable in the call chain is, so it can
+now do code completion for you again, and whoever reads your code can now be a 
+little bit happier.
 
 ### Summary
 
-In summary, you can annotate both the parameters and the return value of 
-functions, classes, and variables, with the help of the `typing` module for more
-complex types.
+You can annotate variables, both the parameters and the return value of 
+functions, and also make your own generic classes with the help of the `typing` 
+module, required for annotating more complex types.
 
 All of these are Python 3 specific. Some options I haven't shown you that is 
 possible for Python 2 (or C in case of the standard library) is using type 
