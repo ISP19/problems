@@ -1,6 +1,6 @@
 # Type Hinting –– an Introduction
 
-Content:
+Contents:
 
 - [Motivations for using type hints](#motivations-for-using-type-hints)
 - [Ways to type hint](#ways-to-type-hint)
