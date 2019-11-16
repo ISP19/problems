@@ -192,7 +192,7 @@ static type checkers and IDE can figure these things out pretty easily. But in
 some cases: 
 
 ```python
-choice_text: str = Cls.call(some_object).complicated.chained.access().andfunc().calls['choice_text']
+rating_str: str = soup.find(**{'class': 'wpb_wrapper'}).find(string='Rating').parent.find('span').string
 ```
 
 The IDE already lost track of what the types are after the first few calls. (And
