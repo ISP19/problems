@@ -17,8 +17,6 @@ Draw a UML Class Diagram, show the relationship between objects using UML notati
 
 - Use ━◇ for `Creep` to show the **aggregation** that `Tortoise` is part of the `Creep`
 
-- Use ━ for `Cat` and `Bird` to show the **association** that they can eat or be eaten.
-
 ## References
 
 - [Unified Modeling Language](https://en.wikipedia.org/wiki/Unified_Modeling_Language) - Wikipedia
