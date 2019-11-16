@@ -6,13 +6,13 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 
 | Topic                                            | Author |
 |:-------------------------------------------------|--------|
-| [Draw Git Commit Graph](git-command/README)      | Tetach |
-| [DRY Principle and Django Templates](dry-principle/README)| Sivanat |
-| [Inspections](inspection-review/README)          | Wijantra |
-| [Kanban versus Scrum](kanban-vs-scrum/README)    | Chananchida (1) |
-| [PAD Tips and Scrum Practices](pad-tips-and-scrum/README) | Nutthanich |
-| [Security in Django](security-in-django/README)  | Tharatorn |
-| [Type Hints](type-hints/README)                  | Mai  |
+| [Draw Git Commit Graph](git-command/README.md)      | Tetach |
+| [DRY Principle and Django Templates](dry-principle/README.md)| Sivanat |
+| [Inspections](inspection-review/README.md)          | Wijantra |
+| [Kanban versus Scrum](kanban-vs-scrum/README.md)    | Chananchida (1) |
+| [PAD Tips and Scrum Practices](pad-tips-and-scrum/README.md) | Nutthanich |
+| [Security in Django](security-in-django/README.md)  | Tharatorn |
+| [Type Hints](type-hints/README.md)                  | Mai  |
 
 
 (1) This entire document document was copied (plagiarised) from other sources.
