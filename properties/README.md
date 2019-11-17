@@ -78,7 +78,7 @@ from datetime import date
 
 class Animal:
     # keep old constructor signature, 
-    # for compatibility
+    # for backward compatibility
     def __init__(self, 
             name: str, age: int, species: str):
         self.name = name
@@ -113,7 +113,8 @@ print("Animal's name:", animal.name)
 print("Age", animal.age)
 ```
 
-Changing `age` to a method causes code like this to fail.  We can't rewrite all the existing apps that use `Animal.age`.  
+Changing `age` to a method causes code like this to fail.    
+We can't rewrite all the existing apps that use `Animal.age`.  
 
 ### Solution using a Read-only Property
 
@@ -135,6 +136,10 @@ Now `age` looks like an attribute, but is coded as a method.
 
 Using a property prevents unwanted changes, too.    
 You can't write `zimba.age = 5`.
+
+### Starter Code
+
+[animal.py](animal.py)
 
 ### Make `name` be a Read-Write Property
 
