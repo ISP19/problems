@@ -1,15 +1,10 @@
 # Question
-Do any of the PAD tip is resemble SOLID principle and why?
+Timmy just recently join a coding company, and his first work is to review his coworker code, as he takes a look as their code he notices that a certain function is doing more than what it should so he said "You should use PAD30 to fix your code." but after saying that his coworker looks at him puzzling and Timmy just remember that this company uses SOLID principles as the main design principle.
+
+Which one of the SOLID principles should Timmy tell his coworker to use? 
 
 
 # Answer
-|SOLID Principle| PAD|
-|:-------------------------------------------------|--------|
-|S (Single responsibility principle) |PAD30 (Write Cohesive Code)|
-|O (Open/closed principle) | - |
-|L (Liskov substitution principle) |PAD32 (Substitute by Contract)
-|I (Interface segregation principle)| - |
-|D (Dependency inversion principle)| - |
 
 # S, PAD30
 "Write cohesive code." - ***PAD30***
@@ -23,12 +18,6 @@ Write cohesive/high **cohesion** code
 **Cohesion** is a measure of how functionally related the members of a
 component. High cohesion indicates that the members work toward one feature or set of features.
 
-# L, PAD32
+# Reference
 
-"Substitute by Contract." - ***PAD32***
-
-"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."- ***Liskov substitution principle***
-
-**PAD32**
-
-Derived class must be able to replace base class.
+PAD30 ,Single responsibility principle
