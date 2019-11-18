@@ -31,7 +31,6 @@ T = TypeVar('T')
 
 def remove_duplicate(iterable: Iterable[T]) -> List[T]:
     """Returns a list with no duplicates."""
-    if not isinstance(iterable, Iterable)
     return list(set(iterable))
 
 # No.3
@@ -43,7 +42,7 @@ def normalized(s: str, mode: str = 'NFKC') -> str:
 # No.4
 def count_chars(s: str, normalize: bool = False) -> Dict[str, int]:
     """Returns a dict mapping from characters in ``s`` to their frequency."""
-    d = dict()
+    d: Dict[str, int] = dict()
     for c in s:
         if normalized:
             c = normalized(c)

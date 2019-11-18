@@ -331,7 +331,6 @@ def swap_keys_and_values(dict_):
 # No.2
 def remove_duplicate(iterable):
     """Returns a list with no duplicates."""
-    if not isinstance(iterable, Iterable)
     return list(set(iterable))
 
 # No.3
