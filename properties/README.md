@@ -84,7 +84,7 @@ class Animal:
         self.name = name
         self.species = species
         now = date.today()
-        # infer birthday from age
+        # infer birthday from age, for backward compatibility
         self.birthday = date(
             now.year-age, now.month, now.day)
     
@@ -97,11 +97,11 @@ class Animal:
             age -= 1
         return age
     
-    def set_birthday(self, year:int, month:int, day:int):
+    def set_birthday(self, year: int, month: int, day: int):
         bday = date(year, month, day)
         if bday > date.today():
             raise ValueError(
-              "Birthday cannot be in the future")
+              "Birth date cannot be in the future")
         self.birthday = bday
 ```
 
@@ -113,7 +113,7 @@ print("Animal's name:", animal.name)
 print("Age", animal.age)
 ```
 
-Changing `age` to a method causes code like this to fail.    
+Changing `age` to a method causes this code to fail.    
 We can't rewrite all the existing apps that use `Animal.age`.  
 
 ### Solution using a Read-only Property
@@ -168,7 +168,7 @@ For example:
 'Big Ears'
 ```
         
-### Encapsulation
+### Encapsulation and Properties
 
 Encapsulation is one of the *3 Pillars of OOP*.
 Encapsulation enables you to hide an object's attributes (called *data hiding*) and expose their values using *accessor methods*.
@@ -176,12 +176,39 @@ Encapsulation enables you to hide an object's attributes (called *data hiding*) 
 This enforces the principle of: 
 "*code to an interface, not to an implementation*".
 
-The benefits are:
+The benefits of encapulating/data-hiding are:
+
 1. you can change the implementation without changing the interface (methods)
 2. you can validate values before assigning them to attributes, or make an attribute be "read-only", by providing a "getter" but no "setter"
 
 The problem with the original code is that it exposes its attributes. 
 
-### Encapsulation and Properties
+Properties enforce encapsulation and data-hiding, but also provide a natural syntax for getting/setting an object's attributes -- even if what you "get" is a *computed attribute* like `age` instead of a true attribute.
 
-Properties enforce encapsulation and data-hiding, but still let you use the property as if it was an attribute.
+### Learn More
+
+* Chapter 19 of `Fluent Python` 2E, has a detailed discussion of properties.
+* [property class](https://docs.python.org/3/library/functions.html#property) in Python Library docs.  It is refered to as both a "class" and "function" in the docs.
+
+You can define a property using the `property` class. Suppose the Animal class has methods `get_name` and `set_name`, but no attribute `self.name` (to avoid name collision with the property "name").  You can deine a `name` property using:
+
+```python
+class Animal:
+    def __init__(self, name: str, age: int, species: str):
+       ...
+
+    def get_name(self):
+       # return the animal's name  
+
+    def set_name(self, newname):
+       # set a new name for the animal
+
+    name = property(get_name, set_name, doc="Name of the animal")
+```
+
+The full syntax is:
+
+```python
+property(fget=get_method, fset=set_method, fdel=delete_method, doc="doc string")
+```
+
