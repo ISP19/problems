@@ -1,12 +1,12 @@
 # Basic Custom Template Filters
 
 The Django polls tutorial has several ways to show the latest questions.
-One way that the tutorial does not mention is using custom template tags and filters, which is useful magic of Django that you can create your tamplate tags or filters for use in your project.   
+One way that the tutorial does not mention is using custom template tags and filters, which is useful Django magic that lets you create your tamplate tags or filters for use in your project.   
 
 ## Question
 Create custom template tags or filters that return 5 latest questions in poll_extras.py.  
 
-> You can be using the starter template or just read the code below.   
+> You can start by using the starter template or just read the code below.   
 ```
 django
     mysite
@@ -93,7 +93,8 @@ register = template.Library()
 ```  
 
 ## Answer
-> Try to do it by your self before check your answer [here](answer/README.md).
+> Try to do it by yourself before checking your answer [here](answer/README.md).
 
 ## Useful references
+
 - [Custom template tags and filters](https://docs.djangoproject.com/en/2.2/howto/custom-template-tags/)
