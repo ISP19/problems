@@ -1,0 +1,376 @@
+[
+{
+  "model": "polls.question",
+  "pk": 1,
+  "fields": {
+    "question_text": "What is the best programming language for beginners?",
+    "pub_date": "2018-09-13T09:18:26Z"
+  }
+},
+{
+  "model": "polls.question",
+  "pk": 2,
+  "fields": {
+    "question_text": "What is your favorite web framework?",
+    "pub_date": "2018-09-13T10:49:49Z"
+  }
+},
+{
+  "model": "polls.question",
+  "pk": 30,
+  "fields": {
+    "question_text": "What is the best university in Thailand?",
+    "pub_date": "2018-09-13T11:25:39Z"
+  }
+},
+{
+  "model": "polls.question",
+  "pk": 40,
+  "fields": {
+    "question_text": "What place is shown in this background image?",
+    "pub_date": "2019-09-01T05:00:00Z"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "choice_text": "Basic",
+    "votes": 20
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 2,
+  "fields": {
+    "question": 1,
+    "choice_text": "C",
+    "votes": 9
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 3,
+  "fields": {
+    "question": 1,
+    "choice_text": "C#",
+    "votes": 4
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 4,
+  "fields": {
+    "question": 1,
+    "choice_text": "Java",
+    "votes": 22
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 5,
+  "fields": {
+    "question": 1,
+    "choice_text": "Javascript",
+    "votes": 12
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 6,
+  "fields": {
+    "question": 1,
+    "choice_text": "Kotlin",
+    "votes": 21
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 7,
+  "fields": {
+    "question": 1,
+    "choice_text": "Python",
+    "votes": 39
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 8,
+  "fields": {
+    "question": 1,
+    "choice_text": "Ruby",
+    "votes": 14
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 9,
+  "fields": {
+    "question": 30,
+    "choice_text": "AIT",
+    "votes": 312
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 10,
+  "fields": {
+    "question": 30,
+    "choice_text": "Chiang Mai",
+    "votes": 258
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 11,
+  "fields": {
+    "question": 30,
+    "choice_text": "Chulalongkorn",
+    "votes": 421
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 12,
+  "fields": {
+    "question": 30,
+    "choice_text": "Kasetsart",
+    "votes": 372
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 13,
+  "fields": {
+    "question": 30,
+    "choice_text": "Khon Kaen",
+    "votes": 102
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 14,
+  "fields": {
+    "question": 30,
+    "choice_text": "KMIT",
+    "votes": 370
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 15,
+  "fields": {
+    "question": 30,
+    "choice_text": "Mahidol",
+    "votes": 400
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 16,
+  "fields": {
+    "question": 30,
+    "choice_text": "Prince of Songhla",
+    "votes": 284
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 17,
+  "fields": {
+    "question": 30,
+    "choice_text": "Thammasat",
+    "votes": 402
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 21,
+  "fields": {
+    "question": 2,
+    "choice_text": "Code Igniter",
+    "votes": 1
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 22,
+  "fields": {
+    "question": 2,
+    "choice_text": "Django",
+    "votes": 8
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 23,
+  "fields": {
+    "question": 2,
+    "choice_text": "Grails",
+    "votes": 3
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 24,
+  "fields": {
+    "question": 2,
+    "choice_text": "Lavarel",
+    "votes": 4
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 25,
+  "fields": {
+    "question": 2,
+    "choice_text": "Pyramid",
+    "votes": 1
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 26,
+  "fields": {
+    "question": 2,
+    "choice_text": "Ruby on Rails",
+    "votes": 5
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 27,
+  "fields": {
+    "question": 2,
+    "choice_text": "Spring",
+    "votes": 3
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 28,
+  "fields": {
+    "question": 2,
+    "choice_text": "Struts",
+    "votes": 1
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 29,
+  "fields": {
+    "question": 2,
+    "choice_text": "Node.js + Express",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 30,
+  "fields": {
+    "question": 1,
+    "choice_text": "Lisp",
+    "votes": 6
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 31,
+  "fields": {
+    "question": 2,
+    "choice_text": "Play!",
+    "votes": 6
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 32,
+  "fields": {
+    "question": 2,
+    "choice_text": "Flask",
+    "votes": 2
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 33,
+  "fields": {
+    "question": 2,
+    "choice_text": "ASP.NET, ASP [MVC]",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 34,
+  "fields": {
+    "question": 2,
+    "choice_text": "Something else",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 35,
+  "fields": {
+    "question": 1,
+    "choice_text": "Matlab or Octave",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 41,
+  "fields": {
+    "question": 40,
+    "choice_text": "Atacama Desert in Chile",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 42,
+  "fields": {
+    "question": 40,
+    "choice_text": "Grand Canyon in Arizona, USA",
+    "votes": 5
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 43,
+  "fields": {
+    "question": 40,
+    "choice_text": "Monte Desert in Argentina",
+    "votes": 3
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 44,
+  "fields": {
+    "question": 40,
+    "choice_text": "Mount Sharp on planet Mars",
+    "votes": 0
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 45,
+  "fields": {
+    "question": 40,
+    "choice_text": "Rocky Mountains in western USA",
+    "votes": 3
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 46,
+  "fields": {
+    "question": 40,
+    "choice_text": "Tabernas Desert in Spain",
+    "votes": 2
+  }
+}
+]
