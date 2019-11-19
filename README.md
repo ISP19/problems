@@ -12,6 +12,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Git Fork and Git Clone](git-fork-vs-git-clone/README.md)| Sukrita |
 | [Inspections](inspection-review/README.md)          | Wijantra |
 | [Kanban versus Scrum](kanban-vs-scrum/README.md)    | Chananchida (1) |
+| [Meaningful Names](clean-code-meaningful-names/README.md) | Sirikon |
 | [PAD Tips and Scrum Practices](pad-tips-and-scrum/README.md) | Nutthanich |
 | [Properties](properties/README.md) for better encapsulation | Fatalai |
 | [Security in Django](security-in-django/README.md)  | Tharatorn |
