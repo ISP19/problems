@@ -49,4 +49,4 @@ Match the rule with the example which best describes it:
 
 And:
 
-* *Pay attention to Requirements*.  This assignment said that references should be specific, not an **entire book**.
+* *Pay Attention to Requirements*.  This assignment said that references should be specific, not an **entire book**.
