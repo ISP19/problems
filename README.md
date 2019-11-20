@@ -29,21 +29,26 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 
 (1) This entire document document was copied (plagiarised) from other sources.
 
-### Django Specific Questions
+### Django or HTML Specific Questions
 
 | Topic                                                           | Author |
 |:----------------------------------------------------------------|--------|
 | [Django Custom Template Filters](custom-template-filters/README.md) | Chayathon |
 | [Some basic true/false questions](basic-django/README.md)       | Tiranan |
 | [Customize Attribute Names in Django Models](django-models-tip/README.md) | Kritpawat |
+| [Javascript for DOM Manipulation](DOM-manipulation/README.md)   | Nattapol |
 | [More basic questions](about-django/README.md)                  | Tanapol |
 | [Django and Scrum](django-scrum/README.md)                      | Kannipa |
 
 ### Incomplete or Misformatted Questions 
 
-| Topic                                                           | Author |
-|:----------------------------------------------------------------|--------|
-| [Increment and Daylog](increment_and_daylog/README.md)          | Parkkung  |
-| [PAD practices](PAD practices/README.md)                        | Jirawadee |
-| [Prototyping](prototyping/README.md)                            | Jitta  |
+| Topic                                                           | Author   |
+|:----------------------------------------------------------------|----------|
+| [Increment and Daylog](increment_and_daylog/README.md)          | Parkkung |
+| [Miscellaneoous Django Questions](django-fixtures/README.md)    | Kasadis  |
+| [PAD practices](PAD practices/README.md)                        | Jirawadee|
+| [Prototyping](prototyping/README.md)                            | Jitta    |
+| Overwrote README in top-level directory (2)                     | Ingharat |
+
+(2) By this time, you should know better.  Cannot be merged as is.
 
