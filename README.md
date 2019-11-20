@@ -16,6 +16,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [PAD Tips and Scrum Practices](pad-tips-and-scrum/README.md) | Nutthanich |
 | [Apply PAD Tips to Situations](agile-situation/README.md) | Phantakarn |
 | [Properties](properties/README.md) for better encapsulation | Fatalai |
+| [Refactoring versus Rewriting](refactor-vs-rewrite/README.md) | Wikrom |
 | [Security in Django](security-in-django/README.md)  | Tharatorn |
 | [Type Hints](type-hints/README.md)                  | Mai  |
 | [Four Types of Code Review](4-types-of-code-reviews/README.md) | Arisa  |
