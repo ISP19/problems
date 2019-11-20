@@ -26,6 +26,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Type Hints](type-hints/README.md)                              | Mai  |
 | [UML Class Diagram](draw-uml/README.md)                         | Vichyawat  |
 | [Unittesting](check-code-with-unittest/README.md)               | Boonyanuch |
+| [7 Habits of Effective Programmers](effective-programer/README.md) | Patteera |
 
 
 (1) This entire document document was copied (plagiarised) from other sources.
