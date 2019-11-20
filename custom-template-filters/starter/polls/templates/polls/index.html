@@ -1,0 +1,17 @@
+<html>
+<body>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+{% load poll_extras %}
+
+{% if questions %}
+    <ul>
+    {# Write your code that display 5 latest questions below #}
+
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+</body>
+</html>

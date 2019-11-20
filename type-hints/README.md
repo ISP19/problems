@@ -30,7 +30,7 @@ BDFL Guido van Rossum) agree that _static type checking_ is still welcome (in th
 ### Function annotations (PEP 3107)
 
 Function annotations were introduced in [**PEP 3107**](https://www.python.org/dev/peps/pep-3107/)
-and is available from Python 3.0.
+and is available from Python 3.0 onwards.
 The PEP allows for this syntax
 
 ```python
@@ -57,8 +57,8 @@ allows for any valid python expression to be there including any `str`,
 def catch_all(*args, **kwargs) -> None:
     return
 
-def double_string(string: str, sep: str = '') -> str:
-    return f'{string}{sep}{string}'
+def double_string(s: str, sep: str = '') -> str:
+    return f'{s}{sep}{s}'
 
 def my_abs(x: int) -> int:
     if x < 0:
@@ -78,10 +78,30 @@ def my_abs(x: int) -> int:
 With these, IDEs and static type checkers like `mypy` can help you check for 
 any type issues, before actual runtime.
 
+In comparison with these bare bones functions below that you're not really sure
+what it does, the above surely is an improvement without too much effort. 
+
+```python
+def catch_all(*args, **kwargs):
+    return
+
+def double_string(s, sep):
+    return f'{s}{sep}{s}'
+
+def my_abs(x):
+    if x < 0:
+        x = -x
+    return x
+```
+
+(Many people agree that for small "obvious" functions, you don't really
+need a detailed docstring. Type hints add just that moderate amount of detail
+without needing too much description via docstrings)
+
 ### The typing module (PEP 484)
 
 [**PEP 484**](https://www.python.org/dev/peps/pep-0484/) introduced the 
-[`typing`](https://docs.python.org/3/library/typing.html) module,
+[`typing`](https://docs.python.org/3/library/typing.html) module, in Python 3.5
 which allows for more complex types.
 
 Let's see it in action.
@@ -172,7 +192,7 @@ static type checkers and IDE can figure these things out pretty easily. But in
 some cases: 
 
 ```python
-choice_text: str = Cls.call(some_object).complicated.chained.access().andfunc().calls['choice_text']
+rating_str: str = soup.find(**{'class': 'wpb_wrapper'}).find(string='Rating').parent.find('span').string
 ```
 
 The IDE already lost track of what the types are after the first few calls. (And
@@ -187,9 +207,16 @@ You can annotate variables, both the parameters and the return value of
 functions, and also make your own generic classes with the help of the `typing` 
 module, required for annotating more complex types.
 
-All of these are Python 3 specific. Some options I haven't shown you that is 
-possible for Python 2 (or C in case of the standard library) is using type 
-comments and stub files.
+All of these are Python 3 specific.
+Some options I haven't shown you that is possible for Python 2 (or C in case of 
+the standard library) is using type comments and stub files (those `.pyi` files 
+you sometimes see).
+
+> **Note:** some corporations (like Dropbox) uses Python 3.5 so variable 
+> annotations would not be available in those cases (But in the specific case of
+> Dropbox, they don't really use the distributed version of Python so I'm not 
+> 100% sure if it's available or not—though they do like `mypy`, but just aware 
+> of compatibility issues if that's a concern.)
 
 I'll just put a link down here to my (unfinished) slides (missing some examples)
 for the `typing` module) in case you want to know about them (skip to the end of
@@ -197,11 +224,12 @@ the slides).
 https://docs.google.com/presentation/d/1zoazXU6r4XZhYgjxGkpdDLirccB9TZg9mN40bW-0D6M/edit
 
 For other sources I suggest reading `typing` module in the docs and the PEPs it 
-links to.
+links to. Many articles online are good as well. See my [**references**](#references)
+for link to a talk by Guido van Rossum.
 
 ## Question / Problem / Task
 
-> **Note:** to run `mypy` simply
+> **Note:** to run `mypy` simply use
 > ```bash
 > $ pip install mypy
 > ```
@@ -233,7 +261,7 @@ __________________   6. `[(0, 5), (5, 0), (5, 5)]`
 __________________   7. `lambda x: None`  
 __________________   8. `lambda: 'some string'`
 
-### 2. For each type annotation, give an example of objects that would pass `mypy` type check
+### 2. For each type annotation, give an example object that would pass `mypy` type check
 
 **Example:**
 
@@ -241,41 +269,26 @@ __________________   8. `lambda: 'some string'`
 ```pythonstub
 {'data': {'question_id': 34, 'choice_id': 132, 'error_msg': None}}
 ```
-\
+
 &nbsp; 1. `Iterable[Union[int, float]]`  
-```
 
-```
 &nbsp; 2. `Sequence[Dict[str, float]]`
-```
 
-```
 &nbsp; 3.  `Any`
-```
 
-```
 &nbsp; 4.  `None`
-```
 
-```
 &nbsp; 5.  `Dict[str, Optional[str]]`
-```
 
-```
 &nbsp; 6.  `Literal['r', 'rt', 'w', 'wt']`
-```
 
-```
 &nbsp; 7.  `N = TypeVar('Number', int, float); Tuple[N, N]`
-```
 
-```
 &nbsp; 8.  `Mapping[float, int]`
-```
 
-```
 
 ### 3. Add appropriate type hints to these code snippets
+
 There should be type hints for all function/method's parameters and return value.
 Try to be forgiving for parameter types and specific for return type.
 
@@ -288,6 +301,7 @@ def my_map(a: Callable, b: Iterable) -> Iterator:
     return map(a, b)
 ```
 
+**Problems:**
 ```python
 from typing import *
 
@@ -303,7 +317,6 @@ def swap_keys_and_values(dict_):
 # No.2
 def remove_duplicate(iterable):
     """Returns a list with no duplicates."""
-    if not isinstance(iterable, Iterable)
     return list(set(iterable))
 
 # No.3
