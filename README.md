@@ -28,3 +28,4 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 |:-------------------------------------------------|--------|
 | [Django Custom Template Filters](custom-template-filters/README.md) | Chayathon |
 | [Some basic true/false questions](basic-django/README.md) | Tiranan |
+| [More basic questions](about-django/README.md) | Tanapol |
