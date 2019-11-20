@@ -6,7 +6,6 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 
 | Topic                                            | Author |
 |:-------------------------------------------------|--------|
-| [Django Custom Template Filters](custom-template-filters/README.md) | Chayathon |
 | [Draw Git Commit Graph](git-command/README.md)      | Tetach |
 | [DRY Principle and Django Templates](dry-principle/README.md)| Sivanat |
 | [Git Fork and Git Clone](git-fork-vs-git-clone/README.md)| Sukrita |
@@ -21,3 +20,11 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 
 
 (1) This entire document document was copied (plagiarised) from other sources.
+
+### Django Specific Questions
+
+
+| Topic                                            | Author |
+|:-------------------------------------------------|--------|
+| [Django Custom Template Filters](custom-template-filters/README.md) | Chayathon |
+| [Some basic true/false questions](basic-django/README.md) | Tiranan |
