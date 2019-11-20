@@ -229,7 +229,7 @@ for link to a talk by Guido van Rossum.
 
 ## Question / Problem / Task
 
-> **Note:** to run `mypy` simply
+> **Note:** to run `mypy` simply use
 > ```bash
 > $ pip install mypy
 > ```
@@ -261,7 +261,7 @@ __________________   6. `[(0, 5), (5, 0), (5, 5)]`
 __________________   7. `lambda x: None`  
 __________________   8. `lambda: 'some string'`
 
-### 2. For each type annotation, give an example of objects that would pass `mypy` type check
+### 2. For each type annotation, give an example object that would pass `mypy` type check
 
 **Example:**
 
@@ -269,41 +269,26 @@ __________________   8. `lambda: 'some string'`
 ```pythonstub
 {'data': {'question_id': 34, 'choice_id': 132, 'error_msg': None}}
 ```
-\
+
 &nbsp; 1. `Iterable[Union[int, float]]`  
-```
 
-```
 &nbsp; 2. `Sequence[Dict[str, float]]`
-```
 
-```
 &nbsp; 3.  `Any`
-```
 
-```
 &nbsp; 4.  `None`
-```
 
-```
 &nbsp; 5.  `Dict[str, Optional[str]]`
-```
 
-```
 &nbsp; 6.  `Literal['r', 'rt', 'w', 'wt']`
-```
 
-```
 &nbsp; 7.  `N = TypeVar('Number', int, float); Tuple[N, N]`
-```
 
-```
 &nbsp; 8.  `Mapping[float, int]`
-```
 
-```
 
 ### 3. Add appropriate type hints to these code snippets
+
 There should be type hints for all function/method's parameters and return value.
 Try to be forgiving for parameter types and specific for return type.
 
@@ -316,6 +301,7 @@ def my_map(a: Callable, b: Iterable) -> Iterator:
     return map(a, b)
 ```
 
+**Problems:**
 ```python
 from typing import *
 
