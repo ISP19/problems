@@ -1,0 +1,36 @@
+<html>
+<body>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+<h1>Reset Polls Voting</h1>
+
+
+<table>
+  <tr>
+  <th>Poll</th> <th>Total Votes</th> <th>Reset Votes?</th>
+  </tr>
+  <!-- body of table -->
+    {% for question in all_question_list %}
+      <tr>
+        <td><a href="{% url 'polls:results' question.id %}">{{ question.question_text }}</a></td>
+        <td align="center">{{ question.total_votes }}</td>
+          {% ifnotequal question.total_votes 0 %}
+            {% csrf_token %}
+            <td align="center"><a href="{% url 'polls:reset_votes' question.id %}">Reset Votes</a></td>
+          {% else %}
+              <td align="center">No Votes</td>
+          {% endifnotequal %}
+      </tr>
+    {% endfor %}
+</table>
+
+{% if messages %}
+   <!-- display messages here -->
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>
