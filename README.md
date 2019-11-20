@@ -18,6 +18,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Meaningful Names](clean-code-meaningful-names/README.md)       | Sirikon |
 | [PAD Tips and Scrum Practices](pad-tips-and-scrum/README.md)    | Nutthanich |
 | [Apply PAD Tips to Situations](agile-situation/README.md)       | Phantakarn |
+| [More Questions on PAD Tips](pad-tips-pakkapon/README.md)       | Pakkapon |
 | [Properties](properties/README.md) for better encapsulation     | Fatalai |
 | [Refactoring versus Rewriting](refactor-vs-rewrite/README.md)   | Wikrom |
 | [Security in Django](security-in-django/README.md)              | Tharatorn |
