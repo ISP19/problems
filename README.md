@@ -6,6 +6,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 
 | Topic                                            | Author |
 |:-------------------------------------------------|--------|
+| [Apply 12 Principles of Agile](agile-software-development/README.md) | Supakorn |
 | [Draw Git Commit Graph](git-command/README.md)      | Tetach |
 | [DRY Principle and Django Templates](dry-principle/README.md)| Sivanat |
 | [Git Fork and Git Clone](git-fork-vs-git-clone/README.md)| Sukrita |
