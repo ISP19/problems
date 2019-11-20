@@ -6,7 +6,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 
 | Topic                                                           | Author  |
 |:----------------------------------------------------------------|---------|
-| [Agile Manifesto fill in blanks](agile-manifesto/README.md)     | Thanida |
+| [Agile Manifesto fill in the blanks](agile-manifesto/README.md) | Thanida |
 | [Apply Agile Principles](agile-software-development/README.md)  | Supakorn|
 | [Apply Agile Tips to His Project](agile_tips/README.md)         | Thun    |
 | [Comments](comment/README.md)                                   | Gunn    |
@@ -15,7 +15,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Four Types of Code Review](4-types-of-code-reviews/README.md)  | Arisa   |
 | [Git Fork and Git Clone](git-fork-vs-git-clone/README.md)       | Sukrita |
 | [Inspections](inspection-review/README.md)                      | Wijantra|
-| [Kanban versus Scrum](kanban-vs-scrum/README.md)                | Chananchida (1) |
+| [Kanban versus Scrum](kanban-vs-scrum/README.md) (1)            | Chananchida|
 | [Meaningful Names](clean-code-meaningful-names/README.md)       | Sirikon |
 | [PAD Tips and Scrum Practices](pad-tips-and-scrum/README.md)    | Nutthanich |
 | [Apply PAD Tips to Situations](agile-situation/README.md)       | Phantakarn |
@@ -29,8 +29,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Unittesting](check-code-with-unittest/README.md)               | Boonyanuch |
 | [7 Habits of Effective Programmers](effective-programer/README.md) | Patteera |
 
-
-(1) This entire document document was copied (plagiarised) from other sources.
+(1) This entire document was copied (plagiarised) from other sources.
 
 ### Django or HTML Specific Questions
 
@@ -54,5 +53,6 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Prototyping](prototyping/README.md)                            | Jitta    |
 | Overwrote README in top-level directory (2)                     | Ingharat |
 
+---
 (2) By this time, you should know better.  Cannot be merged as is.
 
