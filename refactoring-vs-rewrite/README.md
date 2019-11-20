@@ -1,22 +1,22 @@
 
-# Refactoring Vs Rewrite
+# Refactoring Vs Rewriting
 
-## **Refactoring**
+## Refactoring
+
 Refactoring is the way that we improve code without changing The behavior of the system.
 
-<br>
-
-**Learn more about refactoring**
+Learn more about refactoring
 >https://refactoring.com/
 
-## **Rewriting**
+## Rewriting
 
-Rewrite is the process of changing a software system in such a way that we rewrite a new code from all the existing code without re-use of it.
+Rewrite[-ing] is the process of changing a software system in such a way that we rewrite a new code from all the existing code without re-use of it.
 
-**Learn more about rewrite**
->https://en.wikipedia.org/wiki/Rewrite_(programming)
+Learn more about rewrite[-ing]: 
+https://en.wikipedia.org/wiki/Rewrite_(programming)
 
-### **Question**
+### Question
+
 1. What should we use to maintain the original behavior of the system? why?
 
 2. Refactoring starts with code that already exists and we change or improve as needed. How does rewriting work?
@@ -26,7 +26,7 @@ Rewrite is the process of changing a software system in such a way that we rewri
 4. If we want to improve or maintain both the old system and the new system at the same time which should we use?
 
 
-### **Answer**
+### Answer
 1. Refactoring because rewriting may change the original behavior of the system and may cause more time spending.
 
 2. Rewrite starts with code that not exists, for replaces the system that we want.
@@ -36,11 +36,19 @@ Rewrite is the process of changing a software system in such a way that we rewri
 4. Refactoring
 
 
-### Reference
-- [**Compare refactoring and rewriting includes reasons why should we use this process.**](https://medium.com/@sergioserra/application-refactoring-vs-rewrite-eaa25d9eea4d)
+### References
+- [Compare refactoring and rewriting includes reasons why should we use this process.](https://medium.com/@sergioserra/application-refactoring-vs-rewrite-eaa25d9eea4d)
 
-- [**Why refactoring code is almost always better than rewriting it.**](https://www.ben-morris.com/why-refactoring-code-is-almost-always-better-than-rewriting-it/)
+- [Why refactoring code is almost always better than rewriting it.](https://www.ben-morris.com/why-refactoring-code-is-almost-always-better-than-rewriting-it/)
 
-- [**Rewrites vs refactoring: 17 essential reads for developers.**](https://techbeacon.com/app-dev-testing/rewrites-vs-refactoring-17-essential-reads-developers)
+- [Rewrites vs refactoring: 17 essential reads for developers.](https://techbeacon.com/app-dev-testing/rewrites-vs-refactoring-17-essential-reads-developers)
 
-- [**Code refactoring or rewrite?**](https://www.datree.io/resources/legacy-code-refactoring)
+- [Code refactoring or rewrite?](https://www.datree.io/resources/legacy-code-refactoring)
+
+> Instructor's Note: Use style-based formatting.
+>
+> This document is full of manually added bold, even in headings.    
+> You should use style-based formatting instead of forcing it.    
+> I removed all the `**` formatting.
+> 
+> You didn't make some English corrections I suggested.
