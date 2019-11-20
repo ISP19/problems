@@ -4,9 +4,9 @@ Agile software development comprises various approaches to software development 
 
 ---
 
-## Question
+## Question about Agile Practices
 
-Given a list of The Manifesto for Agile Software Development is based on twelve principles below.
+Use these 12 principles from the *The Manifesto for Agile Software Development* to answer the questions below.
 
 1. Customer satisfaction by early and continuous delivery of valuable software.
 2. Welcome changing requirements, even in late development.
@@ -31,33 +31,17 @@ Which statement from the manifesto would solve or best describe the activity bel
 
 4. ____ Some bad development plans have long iteration around 1 month that makes you work so bad because long iteration means less retrospective less feedback. What Agile Software Development that solved this problem?
 
-5. ____ What is the most important thing to measure the progress of work?
+5. ____ What is the most important way to measure the progress of work?
 
 ---
-## Answer 
 
-### **Please try to guess answer before see solution.**
-<details><summary>Answer Here</summary>
-<p>
+## Please try to answer before seeing the solution
 
-## Answer
-
-1. Principle number 6: A face-to-face conversation is the best form of communication (co-location) 
-
-2. Principle number 2: Welcome changing requirements, even in late development.
-
-3. Principle number 4: Close, daily cooperation between business people and developers
-
-4. Principle number 3: Deliver working software frequently (weeks rather than months)
-
-5. Principle number 7: Working software is the primary measure of progress
-
-</p>
-</details>
+[Answers](answers.md)
 
 ---
 ## references
 
 - [Wikipedia - Agile software development](https://en.wikipedia.org/wiki/Agile_software_development)
-- [Short video about What is Agile Methodology? ](https://www.youtube.com/watch?v=ZZ_vnqvW4DQ)
-- [Basic of Agile Manifesto](https://www.youtube.com/watch?v=rf8Gi2RLKWQ&feature=emb_logo)
+- [Short video: What is Agile Methodology?](https://www.youtube.com/watch?v=ZZ_vnqvW4DQ)
+- [Basics of Agile Manifesto](https://www.youtube.com/watch?v=rf8Gi2RLKWQ&feature=emb_logo)
