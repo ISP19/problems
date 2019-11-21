@@ -32,10 +32,12 @@ _ 2 _
 _ 3 _  
 _ 1 _  
 
-Edited `remove_vowel` function  
-[remove_vowel.py](answer/remove_vowel.py)  
+<!--
+Edited `remove_vowel` function  [remove_vowel.py](answer/remove_vowel.py)  
+ -->
 
 
 ## References
+
 [Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)  
 Test-Driven Development By Example - Kent Beck
