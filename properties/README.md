@@ -35,7 +35,7 @@ Browsing the app used to catalog animals in Thailand's zoos and natural parks, t
 The apps are all built on the Kasetsart University Zoology API (KUZA)
 library, which has an `Animal` class like this:
 
-<table border="1">
+<table border="1" width="40%">
 <tr>
 <th>Animal</th>
 </tr>
@@ -66,12 +66,14 @@ class Animal:
         # code omitted for brevity
 ```
 
-You immediately see the problem: `age` is being set as an attribute
-that isn't updated reliability.
+The code reveals the problem: `age` is being set as an attribute
+that isn't updated reliability over time.
 
 ### First Try at a Solution
 
-Your friend suggests that you replace the attribute `age` with a `birthday` attribute, and write a method named `age()` to return the animal's age.  That way, the age will always be current: 
+Your friend suggests that you replace the attribute `age` with a `birthday` attribute, and write a method named `age()` to return the animal's actual age.  That way, the age will always be current.
+
+For backward compatibility, we won't change the constructor but add a set_birthday method. 
 
 ```python
 from datetime import date
@@ -123,13 +125,13 @@ The above solution breaks existing applications, but you can fix it with just **
 Read about properties here:
 * https://www.programiz.com/python-programming/property
 
-Then add a single line to the above code to preserve backward compability, so we can access `age` as if it was an attribute of `Animal`.
+Then add a single line to the `Animal` class (see link below) to make `age` a property.  This way we can access `age` as if it is an attribute of `Animal`.
 
 Verify that the solution works with this example:
 ```python
 zimba = Animal('Zimba', 3, 'Elephant')
 zimba.set_birthday(2010, 1, 15)
-print("Zimba's age is", zimba.age)
+print("Zimba's age is", zimba.age) # age should be 9 in 2019
 ```
 
 Now `age` looks like an attribute, but is coded as a method.
@@ -151,9 +153,13 @@ and can be set using:
 ```python
 animal.name = 'new name'
 ```
-This *looks* like assignment, but using a property it will be a call to a "setter" method of the "name" property.
+
+This *looks* like assignment, but using a property it will be a call to a "setter" method of the "name" property.  Getting the name calls the property "getter".
+
+If you use annotations to create a name property, you will need to *rename* the `name` attribute to something else to avoid conflict.  It is common to add a `_` prefix, i.e. `self._name`.
 
 Write the `name` property "setter" method to do 3 thing:
+
 1. remove leading/trailing whitespace using string.strip()
 2. capitalize the first letter of each word. This is easy: string.title()
 3. raise `ValueError` if the new name is an empty string
@@ -173,7 +179,7 @@ For example:
 Encapsulation is one of the *3 Pillars of OOP*.
 Encapsulation enables you to hide an object's attributes (called *data hiding*) and expose their values using *accessor methods*.
 
-This enforces the principle of: 
+This enforces the principle of 
 "*code to an interface, not to an implementation*".
 
 The benefits of encapulating/data-hiding are:
@@ -181,7 +187,7 @@ The benefits of encapulating/data-hiding are:
 1. you can change the implementation without changing the interface (methods)
 2. you can validate values before assigning them to attributes, or make an attribute be "read-only", by providing a "getter" but no "setter"
 
-The problem with the original code is that it exposes its attributes. 
+The problem with the original `Animal` code is that it exposes its attributes. 
 
 Properties enforce encapsulation and data-hiding, but also provide a natural syntax for getting/setting an object's attributes -- even if what you "get" is a *computed attribute* like `age` instead of a true attribute.
 
@@ -190,7 +196,7 @@ Properties enforce encapsulation and data-hiding, but also provide a natural syn
 * Chapter 19 of `Fluent Python` 2E, has a detailed discussion of properties.
 * [property class](https://docs.python.org/3/library/functions.html#property) in Python Library docs.  It is refered to as both a "class" and "function" in the docs.
 
-You can define a property using the `property` class. Suppose the Animal class has methods `get_name` and `set_name`, but no attribute `self.name` (to avoid name collision with the property "name").  You can deine a `name` property using:
+You can also define a property using the `property` class. Suppose the Animal class has methods `get_name` and `set_name`, but no attribute `self.name` (to avoid name collision with the property "name").  You can deine a `name` property using:
 
 ```python
 class Animal:
