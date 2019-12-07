@@ -20,6 +20,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [PAD Tips and Scrum Practices](pad-tips-and-scrum/README.md)    | Nutthanich |
 | [Apply PAD Tips to Situations](agile-situation/README.md)       | Phantakarn |
 | [More Questions on PAD Tips](pad-tips-pakkapon/README.md)       | Pakkapon |
+| [More Questions on PAD Tips](pad-tips/README.md)                | Chananya |
 | [Properties](properties/README.md) for better encapsulation     | Fatalai |
 | [Refactoring versus Rewriting](refactor-vs-rewrite/README.md)   | Wikrom  |
 | [Security in Django](security-in-django/README.md)              | Tharatorn |
@@ -39,7 +40,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Django Custom Template Filters](custom-template-filters/README.md) | Chayathon |
 | [Django Design Pattern](django-design-pattern/README.md)        | Natthaphon |
 | [Some basic true/false questions](basic-django/README.md)       | Tiranan |
-| [Customize Attribute Names in Django Models](django-models-tip/README.md) | Kritpawat |
+| [Customize Attribute Names in Django Models](django-model-tip/README.md) | Kritpawat |
 | [Javascript for DOM Manipulation](DOM-manipulation/README.md)   | Nattapol |
 | [More basic questions](about-django/README.md)                  | Tanapol |
 | [Django and Scrum](django-scrum/README.md)                      | Kannipa |
