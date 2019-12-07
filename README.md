@@ -23,6 +23,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [More Questions on PAD Tips](pad-tips-pakkapon/README.md)       | Pakkapon |
 | [More Questions on PAD Tips](pad-tips/README.md)                | Chananya |
 | [Properties](properties/README.md) for better encapsulation     | Fatalai |
+| [Refactoring Problem](refactor-problem/README.md)               | Punyawee|
 | [Refactoring versus Rewriting](refactor-vs-rewrite/README.md)   | Wikrom  |
 | [Security in Django](security-in-django/README.md)              | Tharatorn |
 | [SOLID Principles](solid-principles/README.md)                  | Thananan|
