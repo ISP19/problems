@@ -9,6 +9,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Agile Manifesto fill in the blanks](agile-manifesto/README.md) | Thanida |
 | [Apply Agile Principles](agile-software-development/README.md)  | Supakorn|
 | [Apply Agile Tips to His Project](agile_tips/README.md)         | Thun    |
+| [Coding Habits](sidtipat/README.md)                             | Sidtipat|
 | [Comments](comment/README.md)                                   | Gunn    |
 | [Draw Git Commit Graph](git-command/README.md)                  | Tetach  |
 | [DRY Principle and Django Templates](dry-principle/README.md)   | Sivanat |
