@@ -43,6 +43,7 @@ Please submit work using a branch whose name is your first name, in lowercase. O
 | [Django Design Pattern](django-design-pattern/README.md)        | Natthaphon |
 | [Some basic true/false questions](basic-django/README.md)       | Tiranan |
 | [Customize Attribute Names in Django Models](django-model-tip/README.md) | Kritpawat |
+| [Django Basics Matching Problem](django-matching/README.md)     | Pawaris |
 | [Javascript for DOM Manipulation](DOM-manipulation/README.md)   | Nattapol |
 | [More basic questions](about-django/README.md)                  | Tanapol |
 | [Django and Scrum](django-scrum/README.md)                      | Kannipa |
